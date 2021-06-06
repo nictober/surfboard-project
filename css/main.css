@@ -360,7 +360,7 @@ template {
 }
 
 .hero-section {
-  background: url(img/hero-section-bkrnd.png) center center no-repeat;
+  background: url(../img/hero-section-bkrnd.png) center center no-repeat;
   background-size: cover;
   height: 652px;
   color: #fff;
@@ -388,7 +388,7 @@ template {
   margin-left: 47px;
 }
 .header .contacts:before {
-  content: url(img/address_phone.png);
+  content: url(../img/address_phone.png);
   vertical-align: middle;
 }
 
@@ -438,17 +438,17 @@ template {
   margin-right: 30px;
 }
 .hero-offer__subtitle:nth-child(1):before {
-  content: url(img/subtitle-1.png);
+  content: url(../img/subtitle-1.png);
   margin-right: 11px;
   vertical-align: middle;
 }
 .hero-offer__subtitle:nth-child(2):before {
-  content: url(img/subtitle-3.png);
+  content: url(../img/subtitle-3.png);
   margin-right: 11px;
   vertical-align: middle;
 }
 .hero-offer__subtitle:nth-child(3):before {
-  content: url(img/subtitle-2.png);
+  content: url(../img/subtitle-2.png);
   margin-right: 11px;
   vertical-align: middle;
 }
