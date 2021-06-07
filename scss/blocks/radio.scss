@@ -1,0 +1,38 @@
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+
+    &__visible {
+        width: 25px;
+        height: 25px;
+        background-color:#fff ;
+        border-radius: 50%;
+        position: relative;
+
+        
+
+        &:before {
+            content: "";
+            position: absolute;
+            display: none;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: yellow;
+        }
+    }
+}
+
+.radio__elem {
+    display: none;
+
+    &:checked ~ .radio__visible {
+        &:before {
+            display: block;
+        }
+    }
+}
