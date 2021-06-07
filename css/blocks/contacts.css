@@ -1,0 +1,4 @@
+.contacts:before {
+  content: url(../img/address_phone.png);
+  vertical-align: middle;
+}

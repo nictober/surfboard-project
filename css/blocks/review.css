@@ -1,0 +1,31 @@
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 940px;
+  min-height: 348px;
+  background-color: #F8FAF9;
+  background-size: cover;
+  padding-left: 42px;
+}
+.review__img {
+  margin-right: 40px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.review__text-block {
+  padding-top: 40px;
+}
+.review__title {
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 14px;
+}
+.review__text {
+  margin-bottom: 26px;
+  line-height: 21, 6px;
+  color: #666666;
+}
+.review__username {
+  font-weight: 500;
+}

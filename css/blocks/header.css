@@ -1,0 +1,16 @@
+.header {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 102px;
+}
+.header .logo {
+  margin-right: 46px;
+}
+.header .contacts {
+  margin-left: 47px;
+}

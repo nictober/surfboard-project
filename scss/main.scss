@@ -1,113 +1,27 @@
 @import "layout/base.scss";
 @import "layout/normalize.scss";
 
-.hero-section {
-    background: url(../img/hero-section-bkrnd.png) center center no-repeat;
-    background-size: cover;
-    height: 652px;
-    color: #fff;
-}
+@import "blocks/hero-section.scss";
+@import "blocks/hero-container.scss";
+@import "blocks/header.scss";
+@import "blocks/contacts.scss";
+@import "blocks/site-menu.scss";
+@import "blocks/hero-offer.scss";
+@import "blocks/button.scss";
+@import "blocks/benefit.scss";
+@import "blocks/hero-benefits.scss";
+@import "blocks/about-section.scss";
+@import "blocks/about-text.scss";
+@import "blocks/about-advantages.scss";
+@import "blocks/advantage.scss";
+@import "blocks/reviews-section.scss";
+@import "blocks/review-wrapper.scss";
+@import "blocks/review.scss";
+@import "blocks/reviews-menu.scss";
 
-.container {
-    width: 1100px;
-    margin: 0 auto;
-}
 
-.header {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 102px;
 
-    .logo {
-        margin-right: 46px;
-    }
-    
-    .contacts {
-        &:before {
-            content: url(../img/address_phone.png);
-            vertical-align: middle;
-        }
-        margin-left: 47px;
-    }
-}
 
-.site-menu {
-    flex: 1;
 
-    &__items {
-        display: flex;
-        justify-content: space-between;
-    }
 
-    &__link {
-        font-size: 18px;
-        font-weight: 700;
-    }
-}
-
-.hero-offer {
-    &__title {
-        font-size: 48px;
-        font-weight: 700;
-        width: 30%;
-        text-transform: uppercase;
-        line-height: 1.1;
-        margin-bottom: 17px;
-    }
-
-    &__description {
-        font-size: 21px;
-        font-weight: 300;
-        margin-bottom: 49px;
-    }
-
-    &__subtitles {
-        display: flex;
-    }
-
-    &__subtitle {
-        display: flex;
-        font-weight: 700;
-        font-size: 16px;
-        max-width: 142px;
-        margin-right: 30px;
-
-        &:nth-child(1):before {
-            content: url(../img/subtitle-1.png);
-            margin-right: 11px;
-            vertical-align: middle;
-        }
-        &:nth-child(2):before {
-            content: url(../img/subtitle-3.png);
-            margin-right: 11px;
-            vertical-align: middle;
-        }
-        &:nth-child(3):before {
-            content: url(../img/subtitle-2.png);
-            margin-right: 11px;
-            vertical-align: middle;
-        }
-            
-    }
-}
-
-@mixin button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 156px;
-    height: 60px;
-    background-color: #FEDB3F;
-    border-radius: 30px;
-    color: #000;
-    font-weight: 800;
-    font-size: 16px;
-    text-transform: uppercase
-}
-
-.hero-offer__button {
-    @include button;
-    margin-bottom: 64px;
-}
 

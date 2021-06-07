@@ -16,6 +16,21 @@ body {
   line-height: 1.4;
 }
 
+.section {
+  height: 100vh;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -362,13 +377,20 @@ template {
 .hero-section {
   background: url(../img/hero-section-bkrnd.png) center center no-repeat;
   background-size: cover;
-  height: 652px;
   color: #fff;
 }
 
-.container {
-  width: 1100px;
-  margin: 0 auto;
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header {
@@ -387,7 +409,8 @@ template {
 .header .contacts {
   margin-left: 47px;
 }
-.header .contacts:before {
+
+.contacts:before {
   content: url(../img/address_phone.png);
   vertical-align: middle;
 }
@@ -423,37 +446,11 @@ template {
   font-weight: 300;
   margin-bottom: 49px;
 }
-.hero-offer__subtitles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.hero-offer__subtitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 700;
-  font-size: 16px;
-  max-width: 142px;
-  margin-right: 30px;
-}
-.hero-offer__subtitle:nth-child(1):before {
-  content: url(../img/subtitle-1.png);
-  margin-right: 11px;
-  vertical-align: middle;
-}
-.hero-offer__subtitle:nth-child(2):before {
-  content: url(../img/subtitle-3.png);
-  margin-right: 11px;
-  vertical-align: middle;
-}
-.hero-offer__subtitle:nth-child(3):before {
-  content: url(../img/subtitle-2.png);
-  margin-right: 11px;
-  vertical-align: middle;
+.hero-offer__button {
+  margin-bottom: 64px;
 }
 
-.hero-offer__button {
+.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +468,198 @@ template {
   font-weight: 800;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 64px;
+}
+
+.benefit {
+  font-weight: 700;
+  font-size: 16px;
+  max-width: 142px;
+}
+
+.hero-benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+.hero-benefits__item:last-child {
+  margin-right: 0;
+}
+.hero-benefits__item:nth-child(1):before {
+  content: url(../img/subtitle-1.png);
+  margin-right: 11px;
+  vertical-align: middle;
+}
+.hero-benefits__item:nth-child(2):before {
+  content: url(../img/subtitle-3.png);
+  margin-right: 11px;
+  vertical-align: middle;
+}
+.hero-benefits__item:nth-child(3):before {
+  content: url(../img/subtitle-2.png);
+  margin-right: 11px;
+  vertical-align: middle;
+}
+
+.about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-text__title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.about-text__subtitle {
+  max-width: 440px;
+  margin: auto;
+  color: #666;
+}
+
+.about-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.advantage {
+  width: 276px;
+}
+.advantage__img-wrapper {
+  width: 128px;
+  height: 128px;
+  background: #F2F5F4;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+.advantage__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.advantage__title {
+  font-weight: 700;
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.advantage__text {
+  font-weight: 300;
+  color: #666;
+}
+
+.reviews-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.review-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 940px;
+  min-height: 348px;
+  background-color: #F8FAF9;
+  background-size: cover;
+  padding-left: 42px;
+}
+.review__img {
+  margin-right: 40px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.review__text-block {
+  padding-top: 40px;
+}
+.review__title {
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 14px;
+}
+.review__text {
+  margin-bottom: 26px;
+  line-height: 21, 6px;
+  color: #666666;
+}
+.review__username {
+  font-weight: 500;
+}
+
+.reviews-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reviews-menu__item {
+  margin-right: 6px;
+}
+.reviews-menu__item:last-child {
+  margin-right: 0px;
+}
+.reviews-menu__item--active {
+  margin-right: 6px;
+  position: relative;
+}
+.reviews-menu__item--active:last-child {
+  margin-right: 0px;
+}
+.reviews-menu__item--active:after {
+  content: "";
+  display: block;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  border: 6px solid #FEDB3F;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
 }
 /*# sourceMappingURL=main.css.map */

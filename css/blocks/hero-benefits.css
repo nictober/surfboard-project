@@ -1,0 +1,30 @@
+.hero-benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+.hero-benefits__item:last-child {
+  margin-right: 0;
+}
+.hero-benefits__item:nth-child(1):before {
+  content: url(../img/subtitle-1.png);
+  margin-right: 11px;
+  vertical-align: middle;
+}
+.hero-benefits__item:nth-child(2):before {
+  content: url(../img/subtitle-3.png);
+  margin-right: 11px;
+  vertical-align: middle;
+}
+.hero-benefits__item:nth-child(3):before {
+  content: url(../img/subtitle-2.png);
+  margin-right: 11px;
+  vertical-align: middle;
+}

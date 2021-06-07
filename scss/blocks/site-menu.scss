@@ -1,0 +1,13 @@
+.site-menu {
+    flex: 1;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
