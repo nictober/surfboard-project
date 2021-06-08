@@ -12,7 +12,7 @@
     }
 
     &__text-block {
-        padding-top: 40px;
+        padding-top: 67px;
     }
 
     &__title {
@@ -23,7 +23,8 @@
 
     &__text {
         margin-bottom: 26px;
-        line-height: 21,6px;
+        line-height: 1.4;
+        max-width: 80%;
         color: #666666;
     }
 

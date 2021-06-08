@@ -2,15 +2,16 @@
     display: flex;
     cursor: pointer;
     user-select: none;
+    margin-right: 20px;
+    margin-bottom: 18px;
 
     &__visible {
         width: 25px;
         height: 25px;
-        background-color:#fff ;
+        background-color: #fff;
         border-radius: 50%;
         position: relative;
-
-        
+        margin-right: 10px;
 
         &:before {
             content: "";
@@ -25,12 +26,25 @@
             background: yellow;
         }
     }
+
+    &--checkbox {
+        .radio__visible {
+            border-radius: 6px / 6px;
+
+            &:before {
+                display: block;
+                background: url(../../img/checkmark.png) center center no-repeat;
+            }
+
+        }
+    }
+
 }
 
 .radio__elem {
     display: none;
 
-    &:checked ~ .radio__visible {
+    &:checked~.radio__visible {
         &:before {
             display: block;
         }

@@ -32,6 +32,7 @@
 
 .form {
     display: flex;
+    font-weight: 300;
 
     &__col {
         display: flex;  
@@ -82,5 +83,13 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+}
+
+.form__controls:nth-child(3){
+    margin-bottom: 40px;
+}
+
+.form__buttons {
+    display: flex;
 }
 

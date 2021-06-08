@@ -443,13 +443,13 @@ template {
   font-weight: 700;
   width: 30%;
   text-transform: uppercase;
-  line-height: 1.1;
-  margin-bottom: 17px;
+  line-height: 1.16;
+  margin-bottom: 20px;
 }
 .hero-offer__description {
   font-size: 21px;
   font-weight: 300;
-  margin-bottom: 49px;
+  margin-bottom: 38px;
 }
 .hero-offer__button {
   margin-bottom: 64px;
@@ -473,6 +473,21 @@ template {
   font-weight: 800;
   font-size: 16px;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #FFD517;
+}
+.button--transparent {
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+  font-weight: 300;
+}
+.button--transparent:hover {
+  background: inherit;
+  color: #FEDB3F;
 }
 
 .benefit {
@@ -617,7 +632,7 @@ template {
      object-fit: scale-down;
 }
 .review__text-block {
-  padding-top: 40px;
+  padding-top: 67px;
 }
 .review__title {
   font-weight: 700;
@@ -626,7 +641,8 @@ template {
 }
 .review__text {
   margin-bottom: 26px;
-  line-height: 21, 6px;
+  line-height: 1.4;
+  max-width: 80%;
   color: #666666;
 }
 .review__username {
@@ -677,6 +693,8 @@ template {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-right: 20px;
+  margin-bottom: 18px;
 }
 .radio__visible {
   width: 25px;
@@ -684,6 +702,7 @@ template {
   background-color: #fff;
   border-radius: 50%;
   position: relative;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
@@ -697,6 +716,13 @@ template {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: yellow;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 6px/6px;
+}
+.radio--checkbox .radio__visible:before {
+  display: block;
+  background: url(../../img/checkmark.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -729,6 +755,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 300;
 }
 .form__col {
   display: -webkit-box;
@@ -784,5 +811,15 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.form__controls:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

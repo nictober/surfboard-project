@@ -9,5 +9,24 @@
     color: #000;
     font-weight: 800;
     font-size: 16px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #FFD517;
+    }
+
+    &--transparent {
+        background: transparent;
+        color: #fff;
+        text-transform: none;
+        font-weight: 300;
+
+        &:hover {
+            background: inherit;
+            color: #FEDB3F;
+        }
+    }
 }
+
