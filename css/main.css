@@ -577,8 +577,12 @@ template {
 }
 
 .advantage {
-  width: 276px;
   position: relative;
+  text-align: center;
+  padding: 0 3%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .advantage__img-wrapper {
   width: 128px;
@@ -586,8 +590,16 @@ template {
   background: #F2F5F4;
   border-radius: 50%;
   position: relative;
-  overflow: hidden;
   margin: 0 auto 20px;
+}
+.advantage__img-wrapper:before {
+  content: url(../img/dots.png);
+  position: absolute;
+  left: 195px;
+  top: 60px;
+}
+.advantage__img-wrapper:before:last-child::before {
+  display: none;
 }
 .advantage__img {
   position: absolute;
@@ -609,14 +621,11 @@ template {
   font-weight: 300;
   color: #666;
 }
-.advantage:before {
-  content: url(../img/dots.png);
-  position: absolute;
-  left: 272px;
-  top: 60px;
+.advantage:first-child {
+  padding-left: 0;
 }
-.advantage:last-child::before {
-  display: none;
+.advantage:last-child {
+  padding-right: 0;
 }
 
 .reviews-section {
@@ -864,6 +873,7 @@ template {
 }
 .form__input--textarea {
   height: 150px;
+  resize: none;
 }
 
 .form__controls {
