@@ -14,9 +14,9 @@
         <section class="hero-section section">
             <div class="container hero-container">
                 <header class="header">
-                    <a href="#" class="logo">
-                        <img src="img/SurfBoard-logo.png" alt="" class="logo__pic">
-                    </a>
+                    <div class="logo">
+                        <img src="img/SurfBoard-logo.png" alt="SurfBoard-logo" class="logo__img">
+                    </div>
                     <nav class="site-menu">
                         <ul class="site-menu__items">
                             <li class="site-menu__item"><a href="" class="site-menu__link">О нас</a></li>
@@ -28,7 +28,7 @@
                             <li class="site-menu__item"><a href="" class="site-menu__link">Контакты</a></li>
                         </ul>
                     </nav>
-                    <address class="contacts">
+                    <address class="contacts header__contacts">
                         <a href="+78009039090" class="contacts__number">8 800 903 90 90</a>
                     </address>
                 </header>
@@ -39,14 +39,24 @@
                         <p>Самый большой выбор серфбордов в мире</p>
                     </div>
                     <a href="#" class="hero-offer__button button">Заказать</a>
-
                 </div>
 
                 <div class="hero-benefits">
                     <ul class="hero-benefits__list">
-                        <li class="hero-benefits__item benefit">Уникальный дизайн</li>
-                        <li class="hero-benefits__item benefit">Прочные материалы</li>
-                        <li class="hero-benefits__item benefit">Быстрая доставка</li>
+                        <li class="hero-benefits__item benefit">
+                            <img src="img/subtitle-1.png" alt="design" class="benefit__icon">
+                            <div class="benefit__text">Уникальный дизайн</div>
+                        </li>
+                        <li class="hero-benefits__item benefit">
+                            <img src="img/subtitle-3.png" alt="materials" class="benefit__icon">
+                            <div class="benefit__text">Прочные материалы</div>
+                        </li>
+                        <li class="hero-benefits__item benefit">
+                            <img src="img/subtitle-2.png" alt="delivery" class="benefit__icon">
+                            <div class="benefit__text">Быстрая доставка</div>
+                        </li>
+                        <!-- <li class="hero-benefits__item benefit">Прочные материалы</li>
+                        <li class="hero-benefits__item benefit">Быстрая доставка</li> -->
                     </ul>
                 </div>
 
@@ -54,148 +64,170 @@
         </section>
 
         <section class="about-section section">
-            <div class="about-text">
-                <h2 class="about-text__title">Почему Surfboard?</h2>
-                <div class="about-text__subtitle">
-                    <p class="">Мы создаем уникальные и качественные доски из прочных и экологичных материалов</p>
+            <div class="container">
+                <div class="about-text">
+                    <h2 class="about-text__title">Почему Surfboard?</h2>
+                    <div class="about-text__subtitle">
+                        <p class="">Мы создаем уникальные и качественные доски из прочных и экологичных материалов</p>
+                    </div>
                 </div>
+                <ul class="about-advantages">
+                    <li class="about-advantages__item advantage">
+                        <div class="advantage__img-wrapper">
+                            <img src="img/Advantage1.svg" alt="" class="advantage__img">
+                        </div>
+                        <div class="advantage__text-box">
+                            <h5 class="advantage__title">Perfect Fit</h5>
+                            <div class="advantage__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
+                                    pariatur facilis atque? Dolores.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="about-advantages__item advantage">
+                        <div class="advantage__img-wrapper">
+                            <img src="img/Advantage2.svg" alt="" class="advantage__img">
+                        </div>
+                        <div class="advantage__text-box">
+                            <h5 class="advantage__title">Strong</h5>
+                            <div class="advantage__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
+                                    pariatur facilis atque? Dolores.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="about-advantages__item advantage">
+                        <div class="advantage__img-wrapper">
+                            <img src="img/Advantage3.svg" alt="" class="advantage__img">
+                        </div>
+                        <div class="advantage__text-box">
+                            <h5 class="advantage__title">Unique</h5>
+                            <div class="advantage__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
+                                    pariatur facilis atque? Dolores.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="about-advantages">
-                <li class="about-advantages__item advantage">
-                    <div class="advantage__img-wrapper">
-                        <img src="img/Advantage1.svg" alt="" class="advantage__img">
-                    </div>
-                    <h5 class="advantage__title">Perfect Fit</h5>
-                    <div class="advantage__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
-                            pariatur facilis atque? Dolores.</p>
-                    </div>
-                </li>
-                <li class="about-advantages__item advantage">
-                    <div class="advantage__img-wrapper">
-                        <img src="img/Advantage2.svg" alt="" class="advantage__img">
-                    </div>
-                    <h5 class="advantage__title">Strong</h5>
-                    <div class="advantage__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
-                            pariatur facilis atque? Dolores.</p>
-                    </div>
-                </li>
-                <li class="about-advantages__item advantage">
-                    <div class="advantage__img-wrapper">
-                        <img src="img/Advantage3.svg" alt="" class="advantage__img">
-                    </div>
-                    <h5 class="advantage__title">Unique</h5>
-                    <div class="advantage__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
-                            pariatur facilis atque? Dolores.</p>
-                    </div>
-                </li>
-            </ul>
-
         </section>
 
         <section class="reviews-section section">
-            <h2 class="section__title">Отзывы</h2>
-            <div class="review-wrapper">
-                <div class="review">
-                    <img src="img/review-big.png" alt="" class="review__img">
-                    <div class="review__text-block">
-                        <div class="review__title">Лучший дизайн</div>
-                        <div class="review__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, temporibus! Eius maxime
-                                obcaecati possimus error deserunt molestias debitis totam hic illo eaque? Unde doloribus
-                                laborum quisquam, non, ad in ipsa expedita, sapiente soluta incidunt id eligendi
-                                voluptatibus! Fugit, a similique?</p>
+            <div class="container reviews-container">
+                <h2 class="section__title">Отзывы</h2>
+                <div class="review-wrapper">
+                    <div class="review">
+                        <div class="review__img-wrapper">
+                            <img src="img/review-big.png" alt="" class="review__img">
                         </div>
-                        <div class="review__username">Ольга Макарова</div>
+                        <div class="review__text-block">
+                            <div class="review__title">Лучший дизайн</div>
+                            <div class="review__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, temporibus! Eius maxime
+                                    obcaecati possimus error deserunt molestias debitis totam hic illo eaque? Unde doloribus
+                                    laborum quisquam, non, ad in ipsa expedita, sapiente soluta incidunt id eligendi
+                                    voluptatibus! Fugit, a similique?</p>
+                            </div>
+                            <div class="review__username">Ольга Макарова</div>
+                        </div>
                     </div>
                 </div>
+                <ul class="reviews-menu">
+                    <li class="reviews-menu__item reviews-menu__item--active">
+                        <a href="#" class="reviews-menu__item-link">
+                            <img src="img/reviews-1.png" alt="user-pic" class="user-image">
+                        </a>
+                    </li>
+                    <li class="reviews-menu__item">
+                        <a href="#" class="reviews-menu__item-link">
+                            <img src="img/reviews-2.png" alt="user-pic" class="user-image">
+                        </a>
+                    </li>
+                    <li class="reviews-menu__item">
+                        <a href="#" class="reviews-menu__item-link">
+                            <img src="img/reviews-3.png" alt="user-pic" class="user-image">
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="reviews-menu">
-                <li class="reviews-menu__item reviews-menu__item--active">
-                    <img src="img/reviews-1.png" alt="" class="user-image">
-                </li>
-                <li class="reviews-menu__item">
-                    <img src="img/reviews-2.png" alt="" class="user-image">
-                </li>
-                <li class="reviews-menu__item">
-                    <img src="img/reviews-3.png" alt="" class="user-image">
-                </li>
-            </ul>
         </section>
 
         <section class="form-section section">
-            <h2 class="section__title">Закажите доску</h2>
-            <form action="" class="form">
-                <div class="form__col">
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__title">Имя</div>
-                            <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__title">Телефон</div>
-                            <input type="text" class="form__input">
-                        </label>
+            <div class="container">
+                <h2 class="section__title section__title--reviews">Закажите доску</h2>
+                <form action="" class="form">
+                    <div class="form__col">
+                        <div class="form__row">
+                            <label class="form__block">
+                                <div class="form__title">Имя</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Телефон</div>
+                                <input type="text" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__block">
+                                <div class="form__title">Улица</div>
+                                <input type="text" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__block">
+                                <div class="form__title">Дом</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Корпус</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Квартира</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Этаж</div>
+                                <input type="text" class="form__input">
+                            </label>
+                        </div>
                     </div>
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__title">Улица</div>
-                            <input type="text" class="form__input">
-                        </label>
+                    <div class="form__col">
+                        <div class="form__row form__row--textarea">
+                            <label class="form__block">
+                                <div class="form__title">Комментарий</div>
+                                <textarea class="form__input form__input--textarea"></textarea>
+                            </label>
+                        </div>
+                        <div class="form__row form__row--controls">
+                            <div class="form__controls">
+                                <label class="radio">
+                                    <input type="radio" name="option" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="radio__title">Оплата наличными</div>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="option" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="radio__title">Оплата картой</div>
+                                </label>
+                                <div class="form__row">
+                                    <label class="radio radio--checkbox">
+                                        <input type="checkbox" class="radio__elem">
+                                        <div class="radio__visible"></div>
+                                        <div class="radio__title">Не перезванивать</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="form__buttons">
+                            <input type="submit" value="Заказать" class="button">
+                            <input type="reset" value="Очистить" class="button button--transparent">
+                        </div>
                     </div>
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__title">Дом</div>
-                            <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__title">Корпус</div>
-                            <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__title">Квартира</div>
-                            <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__title">Этаж</div>
-                            <input type="text" class="form__input">
-                        </label>
-                    </div>
-                </div>
-                <div class="form__col">
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__title">Комментарий</div>
-                            <textarea class="form__input form__input--textarea"></textarea>
-                        </label>
-                    </div>
-                    <div class="form__controls">
-                        <label class="radio">
-                            <input type="radio" name="option" class="radio__elem">
-                            <div class="radio__visible"></div>
-                            <div class="radio__title">Потребуется сдача</div>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="option" class="radio__elem">
-                            <div class="radio__visible"></div>
-                            <div class="radio__title">Оплата по карте</div>
-                        </label>
-                    </div>
-                    <div class="form__controls">
-                        <label class="radio radio--checkbox">
-                            <input type="checkbox" class="radio__elem">
-                            <div class="radio__visible"></div>
-                            <div class="radio__title">Не перезванивать</div>
-                        </label>
-                    </div>
-                    <div class="form__buttons">
-                        <input type="submit" value="Заказать" class="button">
-                        <input type="reset" value="Очистить" class="button button--transparent">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
     </div>
 </body>

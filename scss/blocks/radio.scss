@@ -3,7 +3,7 @@
     cursor: pointer;
     user-select: none;
     margin-right: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 
     &__visible {
         width: 25px;
@@ -32,8 +32,8 @@
             border-radius: 6px / 6px;
 
             &:before {
-                display: block;
-                background: url(../../img/checkmark.png) center center no-repeat;
+                display: none;
+                background: url(../img/checkmark.png) center center no-repeat;
             }
 
         }

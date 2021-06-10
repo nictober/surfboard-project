@@ -10,6 +10,10 @@ a, ul, li, p, h1, h2, h3, h4, h5, address {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -23,6 +27,9 @@ body {
 
 .section {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .section__title {
   font-weight: 700;
@@ -30,9 +37,12 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.section__title--reviews {
+  margin-bottom: 50px;
+}
 
 .container {
-  width: 1100px;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -383,6 +393,7 @@ template {
   background: url(../img/hero-section-bkrnd.png) center center no-repeat;
   background-size: cover;
   color: #fff;
+  padding: 24px 0 65px;
 }
 
 .hero-container {
@@ -399,20 +410,25 @@ template {
 }
 
 .header {
-  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 102px;
 }
-.header .logo {
-  margin-right: 46px;
-}
-.header .contacts {
+.header__contacts {
   margin-left: 47px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.logo {
+  width: 56px;
+  height: 40px;
 }
 
 .contacts:before {
@@ -432,6 +448,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 47px;
 }
 .site-menu__link {
   font-size: 18px;
@@ -441,18 +458,15 @@ template {
 .hero-offer__title {
   font-size: 48px;
   font-weight: 700;
-  width: 30%;
+  width: 52.5%;
   text-transform: uppercase;
-  line-height: 1.16;
+  line-height: 1.22;
   margin-bottom: 20px;
 }
 .hero-offer__description {
   font-size: 21px;
   font-weight: 300;
   margin-bottom: 38px;
-}
-.hero-offer__button {
-  margin-bottom: 64px;
 }
 
 .button {
@@ -480,10 +494,12 @@ template {
   background-color: #FFD517;
 }
 .button--transparent {
+  width: 105px;
   background: transparent;
   color: #fff;
   text-transform: none;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 18px;
 }
 .button--transparent:hover {
   background: inherit;
@@ -494,6 +510,16 @@ template {
   font-weight: 700;
   font-size: 16px;
   max-width: 142px;
+  vertical-align: middle;
+}
+.benefit__icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 11px;
+  background-size: contain;
+}
+.benefit__text {
+  line-height: 1.2;
 }
 
 .hero-benefits__list {
@@ -510,21 +536,6 @@ template {
 }
 .hero-benefits__item:last-child {
   margin-right: 0;
-}
-.hero-benefits__item:nth-child(1):before {
-  content: url(../img/subtitle-1.png);
-  margin-right: 11px;
-  vertical-align: middle;
-}
-.hero-benefits__item:nth-child(2):before {
-  content: url(../img/subtitle-3.png);
-  margin-right: 11px;
-  vertical-align: middle;
-}
-.hero-benefits__item:nth-child(3):before {
-  content: url(../img/subtitle-2.png);
-  margin-right: 11px;
-  vertical-align: middle;
 }
 
 .about-section {
@@ -548,6 +559,7 @@ template {
   font-weight: 700;
   font-size: 48px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .about-text__subtitle {
   max-width: 440px;
@@ -559,12 +571,14 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .advantage {
   width: 276px;
+  position: relative;
 }
 .advantage__img-wrapper {
   width: 128px;
@@ -588,9 +602,21 @@ template {
   text-align: center;
   margin-bottom: 20px;
 }
+.advantage__title p {
+  line-height: 1.2;
+}
 .advantage__text {
   font-weight: 300;
   color: #666;
+}
+.advantage:before {
+  content: url(../img/dots.png);
+  position: absolute;
+  left: 272px;
+  top: 60px;
+}
+.advantage:last-child::before {
+  display: none;
 }
 
 .reviews-section {
@@ -604,6 +630,21 @@ template {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.reviews-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .review-wrapper {
@@ -620,30 +661,38 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 940px;
-  min-height: 348px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F8FAF9;
   background-size: cover;
-  padding-left: 42px;
+  padding: 42px;
+}
+.review__img-wrapper {
+  width: 253px;
+  height: 264px;
+  margin-right: 44px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .review__img {
-  margin-right: 40px;
+  display: block;
   -o-object-fit: scale-down;
      object-fit: scale-down;
-}
-.review__text-block {
-  padding-top: 67px;
 }
 .review__title {
   font-weight: 700;
   font-size: 27px;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
 }
 .review__text {
   margin-bottom: 26px;
   line-height: 1.4;
   max-width: 80%;
   color: #666666;
+}
+.review__text p {
+  line-height: 1.2;
 }
 .review__username {
   font-weight: 500;
@@ -656,12 +705,18 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .reviews-menu__item {
   margin-right: 6px;
 }
 .reviews-menu__item:last-child {
   margin-right: 0px;
+}
+.reviews-menu__item-link {
+  display: block;
 }
 .reviews-menu__item--active {
   margin-right: 6px;
@@ -680,8 +735,8 @@ template {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -55%);
-          transform: translate(-50%, -55%);
+  -webkit-transform: translate(-50%, -54%);
+          transform: translate(-50%, -54%);
 }
 
 .radio {
@@ -694,7 +749,7 @@ template {
       -ms-user-select: none;
           user-select: none;
   margin-right: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .radio__visible {
   width: 25px;
@@ -721,8 +776,8 @@ template {
   border-radius: 6px/6px;
 }
 .radio--checkbox .radio__visible:before {
-  display: block;
-  background: url(../../img/checkmark.png) center center no-repeat;
+  display: none;
+  background: url(../img/checkmark.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -777,16 +832,22 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 9px;
 }
 .form__row:last-child {
   margin-bottom: 0;
+}
+.form__row--textarea {
+  margin-bottom: 37px;
+}
+.form__row--controls {
+  margin-bottom: 18px;
 }
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 16px;
+  margin-right: 35px;
 }
 .form__block:last-child {
   margin-right: 0;

@@ -1,6 +1,7 @@
 .reviews-menu {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 
     &__item {
         margin-right: 6px;
@@ -8,6 +9,10 @@
         &:last-child {
             margin-right: 0px;
         }
+    }
+
+    &__item-link {
+        display: block;
     }
 
     &__item--active {
@@ -28,7 +33,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -55%);
+        transform: translate(-50%, -54%);
        }
     }
 }

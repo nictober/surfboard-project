@@ -3,26 +3,9 @@
 }
 .hero-benefits__item {
     display: flex;
-    
     margin-right: 30px;
 
     &:last-child {
         margin-right: 0;
-    }
-
-    &:nth-child(1):before {
-        content: url(../img/subtitle-1.png);
-        margin-right: 11px;
-        vertical-align: middle;
-    }
-    &:nth-child(2):before {
-        content: url(../img/subtitle-3.png);
-        margin-right: 11px;
-        vertical-align: middle;
-    }
-    &:nth-child(3):before {
-        content: url(../img/subtitle-2.png);
-        margin-right: 11px;
-        vertical-align: middle;
     }
 }

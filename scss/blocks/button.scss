@@ -18,10 +18,12 @@
     }
 
     &--transparent {
+        width: 105px;
         background: transparent;
         color: #fff;
         text-transform: none;
-        font-weight: 300;
+        font-weight: 400;
+        font-size: 18px;
 
         &:hover {
             background: inherit;

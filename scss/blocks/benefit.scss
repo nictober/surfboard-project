@@ -2,4 +2,16 @@
     font-weight: 700;
     font-size: 16px;
     max-width: 142px;
+    vertical-align: middle;
+
+    &__icon {
+       width: 35px;
+       height: 35px;
+       margin-right: 11px;
+       background-size: contain; 
+    }
+
+    &__text {
+        line-height: 1.2;
+    }
 }

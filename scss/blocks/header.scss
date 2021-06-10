@@ -1,14 +1,11 @@
 .header {
-    padding-top: 20px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 102px;
 
-    .logo {
-        margin-right: 46px;
-    }
-    
-    .contacts {
+    &__contacts {
         margin-left: 47px;
+        font-weight: 700;
+        font-size: 22px;
     }
 }

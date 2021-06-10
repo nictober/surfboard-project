@@ -15,16 +15,24 @@
 
     &__row {
         display: flex;
-        margin-bottom: 18px;
+        margin-bottom: 9px;
 
         &:last-child {
             margin-bottom: 0;
         }
     }
 
+    &__row--textarea {
+        margin-bottom: 37px;
+    }
+
+    &__row--controls {
+        margin-bottom: 18px;
+    }
+
     &__block {
         flex: 1;
-        margin-right: 16px;
+        margin-right: 35px;
         
         &:last-child {
             margin-right: 0;
