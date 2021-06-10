@@ -18,12 +18,17 @@
             position: absolute;
             left: 195px;
             top: 60px;
-
-            &:last-child {
-                &::before {
-                    display: none;
-                }
             }
+        &:nth-child(2) {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &:last-child {
+        .advantage__img-wrapper:before {
+            display: none;
         }
     }
 
