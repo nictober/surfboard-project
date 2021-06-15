@@ -2,23 +2,23 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: rem(20px);
+    margin-bottom: rem(20px);
 
     &__visible {
-        width: 25px;
-        height: 25px;
+        width: rem(25px);
+        height: rem(25px);
         background-color: #fff;
         border-radius: 50%;
         position: relative;
-        margin-right: 10px;
+        margin-right: rem(10px);
 
         &:before {
             content: "";
             position: absolute;
             display: none;
-            width: 13px;
-            height: 13px;
+            width: rem(13px);
+            height: rem(13px);
             border-radius: 50%;
             top: 50%;
             left: 50%;
@@ -28,14 +28,17 @@
     }
 
     &--checkbox {
+        @include tablets {
+            padding-right: rem(40px);
+        }
+
         .radio__visible {
-            border-radius: 6px / 6px;
+            border-radius: rem(6px) rem(6px);
 
             &:before {
                 display: none;
                 background: url(../img/checkmark.png) center center no-repeat;
             }
-
         }
     }
 

@@ -1,3 +1,20 @@
+$ContainerWidth: 940px;
+$BaseFontsize: 18px;
+
+$tablets: 768px;
+$phones: 480px;
+
+html {
+    font-size: $BaseFontsize;
+
+    @include tablets {
+        font-size: $BaseFontsize - 1px;
+    }
+    @include phones {
+        font-size: $BaseFontsize - 2px;
+    }
+}
+
 a, ul, li, p, h1, h2, h3, h4, h5, address {
     text-decoration: none;
     font-style: normal;
@@ -21,10 +38,20 @@ img {
 
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 18px;
     line-height: 1.4;
 }
 
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 95%;
+    max-width: $ContainerWidth;
+    margin: 0 auto;
+}
 
 .section {
     height: 100vh;
@@ -32,17 +59,12 @@ body {
 
     &__title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: rem(48px);
     text-transform: uppercase;
     text-align: center;
     }
 
     &__title--reviews {
-        margin-bottom: 50px;
+        margin-bottom: rem(50px);
     }
-}
-
-.container {
-    width: 940px;
-    margin: 0 auto;
 }

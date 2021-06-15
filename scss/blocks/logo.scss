@@ -1,4 +1,5 @@
 .logo {
-    width: 56px;
-    height: 40px;
+    width: rem(56px);
+    height: rem(40px);
+    flex-shrink: 0;
 }

@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 156px;
-    height: 60px;
+    width: rem(156px);
+    height: rem(60px);
     background-color: #FEDB3F;
-    border-radius: 30px;
+    border-radius: rem(30px);
     color: #000;
     font-weight: 800;
-    font-size: 16px;
+    font-size: rem(16px);
     text-transform: uppercase;
     border: none;
     cursor: pointer;
@@ -18,12 +18,12 @@
     }
 
     &--transparent {
-        width: 105px;
+        width: rem(105px);
         background: transparent;
         color: #fff;
         text-transform: none;
         font-weight: 400;
-        font-size: 18px;
+        font-size: rem(18px);
 
         &:hover {
             background: inherit;

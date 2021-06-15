@@ -3,12 +3,24 @@
 
     &__items {
         display: flex;
-        justify-content: space-between;
-        padding-left: 47px;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: rem(22px);
+        padding-left: rem(47px);
+        padding-top: rem(8px);
+    }
+
+    &__item {
+        margin-bottom: rem(10px);
     }
 
     &__link {
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 700;
+        white-space: nowrap;
+    }
+
+    @include tablets {
+        display: none;
     }
 }

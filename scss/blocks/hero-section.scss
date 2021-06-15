@@ -2,5 +2,14 @@
     background: url(../img/hero-section-bkrnd.png) center center no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 24px 0 65px;
+    padding: rem(24px) 0 rem(65px);
+
+    @include tablets {
+        padding: 0; 
+        background-position: 87% 0%;
+    }
+
+    @include phones {
+        background-position: -610px 52px;
+    }
 }

@@ -3,32 +3,52 @@
     align-items: center;
     background-color: #F8FAF9;
     background-size: cover;
-    padding: 42px;
+    padding: rem(42px);
+
+    @include tablets {
+        flex-direction: column;
+    }
 
     &__img-wrapper {
-        width: 253px;
-        height: 264px;
-        margin-right: 44px;
+        width: rem(253px);
+        height: rem(264px);
+        margin-right: rem(44px);
         flex-shrink: 0;
+
+        @include tablets {
+            margin-right: 0;
+            width: rem(130px);
+            height: rem(130px);
+            margin-bottom: rem(32px);
+        }
     }
 
     &__img {
         display: block;
-        object-fit: scale-down;
+        // object-fit: scale-down;
     }
 
     &__title {
         font-weight: 700;
-        font-size: 27px;
-        margin-bottom: 17px;
+        font-size: rem(27px);
+        margin-bottom: rem(17px);
     }
 
+    &__text-block {
+        @include tablets {
+            text-align: center;
+        }
+    }
 
     &__text {
-        margin-bottom: 26px;
+        margin-bottom: rem(26px);
         line-height: 1.4;
         max-width: 80%;
         color: #666666;
+
+        @include tablets {
+            max-width: none;
+        }
 
         p {
             line-height: 1.2;

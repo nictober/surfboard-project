@@ -1,16 +1,16 @@
 .about-text {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
 
     &__title {
         font-weight: 700;
-        font-size: 48px;
+        font-size: rem(48px);
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin-bottom: rem(10px);
     }
 
     &__subtitle {
-        max-width: 440px;
+        max-width: rem(440px);
         margin: auto;
         color: #666;
     }

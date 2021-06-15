@@ -1,9 +1,13 @@
 .hero-benefits__list {
     display: flex;
+
+    @include tablets {
+        display: none;
+    }
 }
 .hero-benefits__item {
     display: flex;
-    margin-right: 30px;
+    margin-right: rem(30px);
 
     &:last-child {
         margin-right: 0;

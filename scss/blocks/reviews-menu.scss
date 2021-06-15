@@ -4,10 +4,10 @@
     align-items: flex-start;
 
     &__item {
-        margin-right: 6px;
+        margin-right: rem(6px);
 
         &:last-child {
-            margin-right: 0px;
+            margin-right: rem(0px);
         }
     }
 
@@ -16,20 +16,20 @@
     }
 
     &__item--active {
-       margin-right: 6px;
+       margin-right: rem(6px);
        position: relative;
 
        &:last-child {
-           margin-right: 0px;
+           margin-right: rem(0px);
        }
 
        &:after {
         content: "";
         display: block;
-        width: 63px;
-        height: 63px;
+        width: 65px;
+        height: 64px;
         border-radius: 50%;
-        border: 6px solid #FEDB3F;
+        border: rem(6px) solid #FEDB3F;
         position: absolute;
         top: 50%;
         left: 50%;

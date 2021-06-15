@@ -1,11 +1,21 @@
 .header {
-    align-items: center;
     display: flex;
     justify-content: space-between;
 
+    @include tablets {
+        height: 9.5%;
+        align-items: center;
+        padding: 0 rem(30px);
+        background: #1968B1;
+    }
+
     &__contacts {
-        margin-left: 47px;
+        margin-left: rem(47px);
         font-weight: 700;
-        font-size: 22px;
+        font-size: rem(22px);
+
+        @include tablets {
+            display: none;
+        }
     }
 }
