@@ -4,12 +4,19 @@
     max-width: rem(142px);
     vertical-align: middle;
 
-    &__icon {
-       width: rem(35px);
-       height: rem(35px);
-       margin-right: rem(11px);
+    &__icon-wrapper {
+        width: rem(41px);
+        height: rem(41px);
+        margin-right: rem(11px);
        background-size: contain; 
     }
+
+    // &__icon {
+    //    width: rem(41px);
+    //    height: rem(41px);
+    //    margin-right: rem(11px);
+    //    background-size: contain; 
+    // }
 
     &__text {
         line-height: 1.2;

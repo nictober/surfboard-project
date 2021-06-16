@@ -10,12 +10,18 @@
     }
 
     &__contacts {
+        padding-top: rem(5px);
         margin-left: rem(47px);
         font-weight: 700;
         font-size: rem(22px);
+    }
+        
 
+    .header__contacts {
         @include tablets {
             display: none;
         }
     }
+    
+    
 }

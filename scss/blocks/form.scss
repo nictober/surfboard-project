@@ -4,7 +4,7 @@
 
     @include tablets {
         flex-direction: column;
-        padding: 0 13%;
+        padding: 0 18.5%;
     }
 
     &__col {
@@ -29,10 +29,18 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        @include tablets {
+            margin-bottom: 0;
+        }
     }
 
     &__row--textarea {
         margin-bottom: rem(37px);
+
+        @include tablets {
+            margin-bottom: 1.0555555556rem;
+        }
     }
 
     &__row--controls {
@@ -42,9 +50,13 @@
     &__block {
         flex: 1;
         margin-right: rem(15px);
-        
+
         &:last-child {
             margin-right: 0;
+        }
+
+        @include tablets {
+            margin-right: 1.1rem;
         }
     }
 
@@ -56,6 +68,7 @@
 
         @include tablets {
             height: 50%;
+            padding: 0.8rem 0.666666667rem;;
         }
 
         &:focus {

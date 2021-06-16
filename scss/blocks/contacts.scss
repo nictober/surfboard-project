@@ -1,8 +1,20 @@
 .contacts {
-    &:before {
-        content: url(../img/address_phone.png);
-        vertical-align: middle;
-    }
-    padding-top: rem(8px);
     white-space: nowrap;
+    display: flex;
+    // align-items: center;
+
+    &__row {
+        display: flex;;
+        align-items: center;
+    }
+
+    &__icon {
+        width: rem(13px);
+        height: rem(15px);
+        margin-right: rem(7px);
+
+        &--header {
+            fill: #fff;
+        }
+    }
 }

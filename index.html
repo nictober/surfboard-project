@@ -15,7 +15,9 @@
             <div class="container hero-container">
                 <header class="header">
                     <div class="logo">
-                        <img src="img/SurfBoard-logo.png" alt="SurfBoard-logo" class="logo__img">
+                        <svg class="logo__img">
+                            <use xlink:href="img/svg/sprite.svg#logo"></use>
+                        </svg>
                     </div>
                     <nav class="site-menu">
                         <ul class="site-menu__items">
@@ -29,6 +31,11 @@
                         </ul>
                     </nav>
                     <address class="contacts header__contacts">
+                        <div class="contacts__icon-wrap">
+                            <svg class= "contacts__icon contacts__icon--header">
+                                <use xlink:href= "img/svg/sprite.svg#telephone"></use>
+                            </svg>
+                        </div>
                         <a href="+78009039090" class="contacts__number">8 800 903 90 90</a>
                     </address>
                     <a href="#" class="hamburger">
@@ -49,15 +56,27 @@
                 <div class="hero-benefits">
                     <ul class="hero-benefits__list">
                         <li class="hero-benefits__item benefit">
-                            <img src="img/subtitle-1.png" alt="design" class="benefit__icon">
+                            <div class="benefit__icon-wrapper">
+                                <svg class="benefit__icon">
+                                    <use xlink:href= "img/svg/sprite.svg#board-icon"></use>
+                                </svg>
+                            </div>
                             <div class="benefit__text">Уникальный дизайн</div>
                         </li>
                         <li class="hero-benefits__item benefit">
-                            <img src="img/subtitle-3.png" alt="materials" class="benefit__icon">
+                            <div class="benefit__icon-wrapper">
+                                <svg class="benefit__icon">
+                                    <use xlink:href= "img/svg/sprite.svg#materials"></use>
+                                </svg>
+                            </div>
                             <div class="benefit__text">Прочные материалы</div>
                         </li>
                         <li class="hero-benefits__item benefit">
-                            <img src="img/subtitle-2.png" alt="delivery" class="benefit__icon">
+                            <div class="benefit__icon-wrapper">
+                                <svg class="benefit__icon">
+                                    <use xlink:href= "img/svg/sprite.svg#delivery"></use>
+                                </svg>
+                            </div>
                             <div class="benefit__text">Быстрая доставка</div>
                         </li>
                     </ul>
@@ -77,10 +96,9 @@
                 <ul class="about-advantages">
                     <li class="about-advantages__item advantage">
                         <div class="advantage__img-wrapper">
-                            <img src="img/Advantage1.svg" alt="" class="advantage__img">
-                            <!-- <svg class="advantage__img">
+                            <svg class="advantage__img">
                                 <use xlink:href="img/svg/sprite.svg#advantage-one"></use>
-                            </svg> -->
+                            </svg>
                         </div>
                         <div class="advantage__text-box">
                             <h5 class="advantage__title">Perfect Fit</h5>
@@ -92,7 +110,9 @@
                     </li>
                     <li class="about-advantages__item advantage">
                         <div class="advantage__img-wrapper">
-                            <img src="img/Advantage2.svg" alt="" class="advantage__img">
+                            <svg class="advantage__img">
+                                <use xlink:href="img/svg/sprite.svg#advantage-two"></use>
+                            </svg>
                         </div>
                         <div class="advantage__text-box">
                             <h5 class="advantage__title">Strong</h5>
@@ -104,7 +124,9 @@
                     </li>
                     <li class="about-advantages__item advantage">
                         <div class="advantage__img-wrapper">
-                            <img src="img/Advantage3.svg" alt="" class="advantage__img">
+                            <svg class="advantage__img">
+                                <use xlink:href="img/svg/sprite.svg#advantage-three"></use>
+                            </svg>
                         </div>
                         <div class="advantage__text-box">
                             <h5 class="advantage__title">Unique</h5>
@@ -235,6 +257,47 @@
                 </form>
             </div>
         </section>
+
+        <section class="map-section section">
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <address class="contacts footer__contacts">
+                    <div class="contacts__location">Москва, ул.Новый Арбат, д.31/12</div>
+                    <div class="contacts__row">
+                        <div class="contacts__icon-wrap">    
+                            <svg class= "contacts__icon contacts__icon--footer">
+                                <use xlink:href= "img/svg/sprite.svg#telephone"></use>
+                            </svg>
+                        </div>
+                        <a href="+78009039090" class="contacts__number">8 800 903 90 90</a>
+                    </div>
+                </address>
+                <div class="socials footer__socials">
+                    <a href="#" class="socials__link socials__link--vk">
+                        <svg class= "socials__icon">
+                            <use xlink:href= "img/svg/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials__link socials__link--fb">
+                        <svg class= "socials__icon">
+                            <use xlink:href= "img/svg/sprite.svg#fb"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials__link socials__link--inst">
+                        <svg class= "socials__icon">
+                            <use xlink:href= "img/svg/sprite.svg#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials__link socials__link--tw">
+                        <svg class= "socials__icon">
+                            <use xlink:href= "img/svg/sprite.svg#tw"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

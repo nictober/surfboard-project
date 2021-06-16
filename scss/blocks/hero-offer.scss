@@ -21,8 +21,10 @@
 
         @include phones {
             width: 92.5%;
+            line-height: 0.9;
         }
     }
+
     &__description {
         font-size: rem(21px);
         font-weight: 300;
