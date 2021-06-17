@@ -1,8 +1,8 @@
 .button {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: rem(156px);
+    padding: 0 rem(41px);
     height: rem(60px);
     background-color: #FEDB3F;
     border-radius: rem(30px);
@@ -14,8 +14,7 @@
     cursor: pointer;
 
     @include phones {
-        width: rem(156px);
-        height: rem(60px);
+        font-size: rem(22px);
     }
 
     &:hover {
@@ -23,7 +22,6 @@
     }
 
     &--transparent {
-        width: rem(105px);
         background: transparent;
         color: #fff;
         text-transform: none;

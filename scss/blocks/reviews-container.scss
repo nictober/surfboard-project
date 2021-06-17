@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .section__title {
-        margin-bottom: rem(48px);
+    @include phones {
+        width: 99%;
     }
 }

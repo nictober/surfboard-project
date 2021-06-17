@@ -11,12 +11,12 @@
        background-size: contain; 
     }
 
-    // &__icon {
-    //    width: rem(41px);
-    //    height: rem(41px);
+    &__icon {
+       width: rem(41px);
+       height: rem(41px);
     //    margin-right: rem(11px);
     //    background-size: contain; 
-    // }
+    }
 
     &__text {
         line-height: 1.2;

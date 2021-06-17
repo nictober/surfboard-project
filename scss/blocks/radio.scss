@@ -5,6 +5,11 @@
     margin-right: rem(20px);
     margin-bottom: rem(20px);
 
+    @include tablets {
+        margin-right: rem(30px);
+        margin-bottom: rem(24px);
+    }
+
     &__visible {
         width: rem(25px);
         height: rem(25px);
@@ -30,6 +35,11 @@
     &--checkbox {
         @include tablets {
             padding-right: rem(40px);
+        }
+
+        @include phones {
+            padding-right: 0;
+            padding-left: rem(35px);
         }
 
         .radio__visible {

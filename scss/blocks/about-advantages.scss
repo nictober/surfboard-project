@@ -8,7 +8,13 @@
 
     &__item {
         @include phones {
-            margin-bottom: rem(31px);
+            margin-bottom: rem(38px);
+        }
+
+        &:last-child {
+            @include phones {
+                margin-bottom: 0;
+            }
         }
     }
 }

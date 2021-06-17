@@ -13,6 +13,11 @@
 
     &__item-link {
         display: block;
+
+        @include phones {
+            width: 64px;
+            height: 64px;
+        }
     }
 
     &__item--active {
@@ -34,6 +39,15 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -54%);
+       }
+
+       @include phones {
+           &:after {
+               width: 57px;
+               height: 56px;
+
+               transform: translate(-50%, -50%)
+           }
        }
     }
 }

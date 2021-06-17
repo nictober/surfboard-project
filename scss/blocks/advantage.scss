@@ -48,8 +48,8 @@
     }
 
     &__img {
-        width: rem(68px);
-        height: rem(68px);
+        width: 68px;
+        height: 68px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -70,8 +70,13 @@
         text-align: center;
         margin-bottom: rem(20px);
 
+        @include tablets {
+            margin-bottom: rem(5px);
+        }
+
         @include phones {
             text-align: left;
+            font-size: rem(30px);
         }
 
         p {

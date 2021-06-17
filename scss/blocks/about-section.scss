@@ -1,15 +1,14 @@
 .about-section {
-    // padding-top: rem(102px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
-    .container {
+    &__container {
         @include phones {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            height: 90%;
+            width: 98%;
         }
     }
 }

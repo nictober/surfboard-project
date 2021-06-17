@@ -8,6 +8,10 @@
         align-items: center;
     }
 
+    &__location {
+        margin-bottom: rem(8px);
+    }
+
     &__icon {
         width: rem(13px);
         height: rem(15px);

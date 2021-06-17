@@ -9,6 +9,11 @@
         background: #1968B1;
     }
 
+    @include phones {
+        height: 11.5%;
+        padding: 0 rem(3px);
+    }
+
     &__contacts {
         padding-top: rem(5px);
         margin-left: rem(47px);

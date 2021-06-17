@@ -86,9 +86,9 @@
         </section>
 
         <section class="about-section section">
-            <div class="container">
+            <div class="container about-section__container">
                 <div class="about-text">
-                    <h2 class="about-text__title">Почему Surfboard?</h2>
+                    <h2 class="section__title">Почему Surfboard?</h2>
                     <div class="about-text__subtitle">
                         <p class="">Мы создаем уникальные и качественные доски из прочных и экологичных материалов</p>
                     </div>
@@ -142,7 +142,7 @@
 
         <section class="reviews-section section">
             <div class="container reviews-container">
-                <h2 class="section__title">Отзывы</h2>
+                <h2 class="section__title reviews-section__title">Отзывы</h2>
                 <div class="review-wrapper">
                     <div class="review">
                         <div class="review__img-wrapper">
@@ -181,7 +181,7 @@
         </section>
 
         <section class="form-section section">
-            <div class="container">
+            <div class="container form-section__container">
                 <h2 class="section__title section__title--reviews">Закажите доску</h2>
                 <form action="" class="form">
                     <div class="form__col">
@@ -250,7 +250,7 @@
                         </div>
                      
                         <div class="form__buttons">
-                            <input type="submit" value="Заказать" class="button">
+                            <input type="submit" value="Заказать" class="button form__button">
                             <input type="reset" value="Очистить" class="button button--transparent">
                         </div>
                     </div>
@@ -259,45 +259,46 @@
         </section>
 
         <section class="map-section section">
+            <footer class="footer">
+                <div class="container footer__container">
+                    <address class="contacts footer__contacts">
+                        <div class="contacts__location">Москва, ул.Новый Арбат, д.31/12</div>
+                        <div class="contacts__row">
+                            <div class="contacts__icon-wrap">    
+                                <svg class= "contacts__icon contacts__icon--footer">
+                                    <use xlink:href= "img/svg/sprite.svg#telephone"></use>
+                                </svg>
+                            </div>
+                            <a href="+78009039090" class="contacts__number">8 800 903 90 90</a>
+                        </div>
+                    </address>
+                    <div class="socials footer__socials">
+                        <a href="#" class="socials__link socials__link--vk">
+                            <svg class= "socials__icon">
+                                <use xlink:href= "img/svg/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link socials__link--fb">
+                            <svg class= "socials__icon">
+                                <use xlink:href= "img/svg/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link socials__link--inst">
+                            <svg class= "socials__icon">
+                                <use xlink:href= "img/svg/sprite.svg#inst"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link socials__link--tw">
+                            <svg class= "socials__icon">
+                                <use xlink:href= "img/svg/sprite.svg#tw"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </section>
 
-        <footer class="footer">
-            <div class="container footer__container">
-                <address class="contacts footer__contacts">
-                    <div class="contacts__location">Москва, ул.Новый Арбат, д.31/12</div>
-                    <div class="contacts__row">
-                        <div class="contacts__icon-wrap">    
-                            <svg class= "contacts__icon contacts__icon--footer">
-                                <use xlink:href= "img/svg/sprite.svg#telephone"></use>
-                            </svg>
-                        </div>
-                        <a href="+78009039090" class="contacts__number">8 800 903 90 90</a>
-                    </div>
-                </address>
-                <div class="socials footer__socials">
-                    <a href="#" class="socials__link socials__link--vk">
-                        <svg class= "socials__icon">
-                            <use xlink:href= "img/svg/sprite.svg#vk"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials__link socials__link--fb">
-                        <svg class= "socials__icon">
-                            <use xlink:href= "img/svg/sprite.svg#fb"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials__link socials__link--inst">
-                        <svg class= "socials__icon">
-                            <use xlink:href= "img/svg/sprite.svg#inst"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials__link socials__link--tw">
-                        <svg class= "socials__icon">
-                            <use xlink:href= "img/svg/sprite.svg#tw"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </footer>
+
     </div>
 </body>
 </html>

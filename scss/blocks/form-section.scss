@@ -6,4 +6,8 @@
     background: url(../img/form-brd.png) center center no-repeat;
     background-size: cover;
     color: #fff;
+
+    &__container {
+        width: 97.5%;
+    }
 }
