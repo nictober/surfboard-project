@@ -7,11 +7,13 @@
     @include tablets {
         padding: 0; 
         background-size: auto 106%;
-        background-position: -608px -57px;
+        // background-position: -608px -57px;
+        background-position: 76% 49%;
     }
 
     @include phones {
         background-size: auto 91%;
-        background-position: -431px 74px;
+        // background-position: -431px 74px;
+        background-position: 70% 102%;
     }
 }

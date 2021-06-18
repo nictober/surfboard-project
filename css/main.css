@@ -9,7 +9,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 2vmax;
   }
 }
 
@@ -439,13 +439,13 @@ template {
   .hero-section {
     padding: 0;
     background-size: auto 106%;
-    background-position: -608px -57px;
+    background-position: 76% 49%;
   }
 }
 @media screen and (max-width: 480px) {
   .hero-section {
     background-size: auto 91%;
-    background-position: -431px 74px;
+    background-position: 70% 102%;
   }
 }
 
