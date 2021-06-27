@@ -1,0 +1,22 @@
+.product-info {
+    position: relative;
+    padding-bottom: rem(45px);
+
+    @include tablets {
+        padding-top: 0;
+    }
+
+    &__param-block {
+        position: absolute;
+        top: 0;
+        left: 90.5px;
+        padding: 26px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 4px;
+        display: none;
+
+        &:hover {
+            display: block;
+        }
+    }
+}

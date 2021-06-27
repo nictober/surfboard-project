@@ -1,0 +1,36 @@
+.param-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(91px);
+    height: rem(91px);
+    background: #3A587E;
+    border-radius: rem(4px);
+    margin-bottom: rem(50px);
+
+    @include tablets {
+        display: none;
+    }
+
+    &__img {
+        width: rem(38px);
+        height: rem(38px);
+        fill: #fff;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: rem(14px);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        background: #3465A3;
+    }
+
+    &:hover + .product-info__param-block {
+        display: block;
+    }
+}

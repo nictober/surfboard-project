@@ -1,5 +1,7 @@
 .site-menu {
     flex: 1;
+    
+    
 
     &__items {
         display: flex;
@@ -8,10 +10,23 @@
         column-gap: rem(22px);
         padding-left: rem(47px);
         padding-top: rem(8px);
+
+        &--vertical {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+            column-gap: 0;
+            padding-left: 0;
+            padding-top: rem(135px);
+        }
     }
 
     &__item {
         margin-bottom: rem(10px);
+
+        &--vertical {
+            margin-bottom: rem(50px)
+        }
     }
 
     &__link {
@@ -19,9 +34,19 @@
         font-weight: 700;
         white-space: nowrap;
 
+        &--vertical {
+            font-weight: 400;
+            font-size: rem(36px);
+        }
     }
 
     @include tablets {
         display: none;
+
+        &--vertical {
+            display: flex;
+            justify-content: center;
+            flex: auto;
+        }
     }
 }

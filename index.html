@@ -1,304 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-    <div class="wrapper">
-        <section class="hero-section section">
-            <div class="container hero-container">
-                <header class="header">
-                    <div class="logo">
-                        <svg class="logo__img">
-                            <use xlink:href="img/svg/sprite.svg#logo"></use>
-                        </svg>
-                    </div>
-                    <nav class="site-menu">
-                        <ul class="site-menu__items">
-                            <li class="site-menu__item"><a href="" class="site-menu__link">О нас</a></li>
-                            <li class="site-menu__item"><a href="" class="site-menu__link">Серфборды</a></li>
-                            <li class="site-menu__item"><a href="" class="site-menu__link">Команда</a></li>
-                            <li class="site-menu__item"><a href="" class="site-menu__link">Меню</a></li>
-                            <li class="site-menu__item"><a href="" class="site-menu__link">Отзывы</a></li>
-                            <li class="site-menu__item"><a href="" class="site-menu__link">Как мы работаем</a></li>
-                            <li class="site-menu__item"><a href="" class="site-menu__link">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <address class="contacts header__contacts">
-                        <div class="contacts__icon-wrap">
-                            <svg class= "contacts__icon contacts__icon--header">
-                                <use xlink:href= "img/svg/sprite.svg#telephone"></use>
+    <body>
+        <div class="wrapper">
+            <section class="hero-section section">
+                <div class="container hero-container">
+                    <header class="header">
+                        <div class="logo">
+                            <svg class="logo__img">
+                                <use xlink:href="img/svg/sprite.svg#logo"></use>
                             </svg>
                         </div>
-                        <a href="+78009039090" class="contacts__number">8 800 903 90 90</a>
-                    </address>
-                    <a href="#" class="hamburger">
-                        <span class="hamburger__plank"></span>
-                        <span class="hamburger__plank"></span>
-                        <span class="hamburger__plank"></span>
-                    </a>
-                </header>
+                        <nav class="site-menu">
+                            <ul class="site-menu__items">
+                                <li class="site-menu__item">
+                                    <a href="" class="site-menu__link">О нас</a>
+                                </li>
+                                <li class="site-menu__item">
+                                    <a href="#" class="site-menu__link">
+                                        Серфборды
+                                    </a>
+                                </li>
+                                <li class="site-menu__item">
+                                    <a href="" class="site-menu__link">
+                                        Команда
+                                    </a>
+                                </li>
+                                <li class="site-menu__item">
+                                    <a href="" class="site-menu__link">Меню</a>
+                                </li>
+                                <li class="site-menu__item">
+                                    <a href="" class="site-menu__link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="site-menu__item">
+                                    <a href="" class="site-menu__link">
+                                        Как мы работаем
+                                    </a>
+                                </li>
+                                <li class="site-menu__item">
+                                    <a href="" class="site-menu__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <address class="contacts header__contacts">
+                            <div class="contacts__icon-wrap">
+                                <svg
+                                    class="
+                                        contacts__icon contacts__icon--header
+                                    "
+                                >
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#telephone"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <a href="+78009039090" class="contacts__number">
+                                8 800 903 90 90
+                            </a>
+                        </address>
+                        <a href="#" class="hamburger-icon">
+                            <span class="hamburger-icon__plank"></span>
+                            <span class="hamburger-icon__plank"></span>
+                            <span class="hamburger-icon__plank"></span>
+                        </a>
+                    </header>
 
-                <div class="hero-offer">
-                    <h1 class="hero-offer__title">Профессиональные доски для серфинга</h1>
-                    <div class="hero-offer__description">
-                        <p>Самый большой выбор серфбордов в мире</p>
+                    <div class="hero-offer">
+                        <h1 class="hero-offer__title">
+                            Профессиональные доски для серфинга
+                        </h1>
+                        <div class="hero-offer__description">
+                            <p>Самый большой выбор серфбордов в мире</p>
+                        </div>
+                        <a href="#" class="hero-offer__button button">
+                            Заказать
+                        </a>
                     </div>
-                    <a href="#" class="hero-offer__button button">Заказать</a>
-                </div>
 
-                <div class="hero-benefits">
-                    <ul class="hero-benefits__list">
-                        <li class="hero-benefits__item benefit">
-                            <div class="benefit__icon-wrapper">
-                                <svg class="benefit__icon">
-                                    <use xlink:href= "img/svg/sprite.svg#board-icon"></use>
+                    <div class="hero-benefits">
+                        <ul class="hero-benefits__list">
+                            <li class="hero-benefits__item benefit">
+                                <div class="benefit__icon-wrapper">
+                                    <svg class="benefit__icon">
+                                        <use
+                                            xlink:href="img/svg/sprite.svg#board-icon"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <div class="benefit__text">
+                                    Уникальный дизайн
+                                </div>
+                            </li>
+                            <li class="hero-benefits__item benefit">
+                                <div class="benefit__icon-wrapper">
+                                    <svg class="benefit__icon">
+                                        <use
+                                            xlink:href="img/svg/sprite.svg#materials"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <div class="benefit__text">
+                                    Прочные материалы
+                                </div>
+                            </li>
+                            <li class="hero-benefits__item benefit">
+                                <div class="benefit__icon-wrapper">
+                                    <svg class="benefit__icon">
+                                        <use
+                                            xlink:href="img/svg/sprite.svg#delivery"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <div class="benefit__text">
+                                    Быстрая доставка
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section section">
+                <div class="container about-section__container">
+                    <div class="about-text">
+                        <h2 class="section__title">Почему Surfboard?</h2>
+                        <div class="about-text__subtitle">
+                            <p class="">
+                                Мы создаем уникальные и качественные доски из
+                                прочных и экологичных материалов
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="about-advantages">
+                        <li class="about-advantages__item advantage">
+                            <div class="advantage__img-wrapper">
+                                <svg class="advantage__img">
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#advantage-one"
+                                    ></use>
                                 </svg>
                             </div>
-                            <div class="benefit__text">Уникальный дизайн</div>
+                            <div class="advantage__text-box">
+                                <h5 class="advantage__title">Perfect Fit</h5>
+                                <div class="advantage__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Laudantium
+                                        exercitationem nobis pariatur facilis
+                                        atque? Dolores.
+                                    </p>
+                                </div>
+                            </div>
                         </li>
-                        <li class="hero-benefits__item benefit">
-                            <div class="benefit__icon-wrapper">
-                                <svg class="benefit__icon">
-                                    <use xlink:href= "img/svg/sprite.svg#materials"></use>
+                        <li class="about-advantages__item advantage">
+                            <div class="advantage__img-wrapper">
+                                <svg class="advantage__img">
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#advantage-two"
+                                    ></use>
                                 </svg>
                             </div>
-                            <div class="benefit__text">Прочные материалы</div>
+                            <div class="advantage__text-box">
+                                <h5 class="advantage__title">Strong</h5>
+                                <div class="advantage__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Laudantium
+                                        exercitationem nobis pariatur facilis
+                                        atque? Dolores.
+                                    </p>
+                                </div>
+                            </div>
                         </li>
-                        <li class="hero-benefits__item benefit">
-                            <div class="benefit__icon-wrapper">
-                                <svg class="benefit__icon">
-                                    <use xlink:href= "img/svg/sprite.svg#delivery"></use>
+                        <li class="about-advantages__item advantage">
+                            <div class="advantage__img-wrapper">
+                                <svg class="advantage__img">
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#advantage-three"
+                                    ></use>
                                 </svg>
                             </div>
-                            <div class="benefit__text">Быстрая доставка</div>
+                            <div class="advantage__text-box">
+                                <h5 class="advantage__title">Unique</h5>
+                                <div class="advantage__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Laudantium
+                                        exercitationem nobis pariatur facilis
+                                        atque? Dolores.
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
+            </section>
 
-            </div>
-        </section>
+            <section class="products-section section">
 
-        <section class="about-section section">
-            <div class="container about-section__container">
-                <div class="about-text">
-                    <h2 class="section__title">Почему Surfboard?</h2>
-                    <div class="about-text__subtitle">
-                        <p class="">Мы создаем уникальные и качественные доски из прочных и экологичных материалов</p>
-                    </div>
-                </div>
-                <ul class="about-advantages">
-                    <li class="about-advantages__item advantage">
-                        <div class="advantage__img-wrapper">
-                            <svg class="advantage__img">
-                                <use xlink:href="img/svg/sprite.svg#advantage-one"></use>
-                            </svg>
-                        </div>
-                        <div class="advantage__text-box">
-                            <h5 class="advantage__title">Perfect Fit</h5>
-                            <div class="advantage__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
-                                    pariatur facilis atque? Dolores.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="about-advantages__item advantage">
-                        <div class="advantage__img-wrapper">
-                            <svg class="advantage__img">
-                                <use xlink:href="img/svg/sprite.svg#advantage-two"></use>
-                            </svg>
-                        </div>
-                        <div class="advantage__text-box">
-                            <h5 class="advantage__title">Strong</h5>
-                            <div class="advantage__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
-                                    pariatur facilis atque? Dolores.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="about-advantages__item advantage">
-                        <div class="advantage__img-wrapper">
-                            <svg class="advantage__img">
-                                <use xlink:href="img/svg/sprite.svg#advantage-three"></use>
-                            </svg>
-                        </div>
-                        <div class="advantage__text-box">
-                            <h5 class="advantage__title">Unique</h5>
-                            <div class="advantage__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nobis
-                                    pariatur facilis atque? Dolores.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <div class="container products__container">
+                    <a href="" class="slider-button">
+                        <svg class="slider-arrow">
+                            <use xlink:href = "img/svg/sprite.svg#left-arrow"></use>
+                        </svg>
+                    </a>
 
-        <section class="reviews-section section">
-            <div class="container reviews-container">
-                <h2 class="section__title reviews-section__title">Отзывы</h2>
-                <div class="review-wrapper">
-                    <div class="review">
-                        <div class="review__img-wrapper">
-                            <img src="img/review-big.png" alt="" class="review__img">
+                    <div class="slider-wrap">
+                        <div class="products-pic-wrap">
+                            <img src="img/product-pic.png" alt="product-picture" class="product-pic">
                         </div>
-                        <div class="review__text-block">
-                            <div class="review__title">Лучший дизайн</div>
-                            <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, temporibus! Eius maxime
-                                    obcaecati possimus error deserunt molestias debitis totam hic illo eaque? Unde doloribus
-                                    laborum quisquam, non, ad in ipsa expedita, sapiente soluta incidunt id eligendi
-                                    voluptatibus! Fugit, a similique?</p>
-                            </div>
-                            <div class="review__username">Ольга Макарова</div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="reviews-menu">
-                    <li class="reviews-menu__item reviews-menu__item--active">
-                        <a href="#" class="reviews-menu__item-link">
-                            <img src="img/reviews-1.png" alt="user-pic" class="user-image">
-                        </a>
-                    </li>
-                    <li class="reviews-menu__item">
-                        <a href="#" class="reviews-menu__item-link">
-                            <img src="img/reviews-2.png" alt="user-pic" class="user-image">
-                        </a>
-                    </li>
-                    <li class="reviews-menu__item">
-                        <a href="#" class="reviews-menu__item-link">
-                            <img src="img/reviews-3.png" alt="user-pic" class="user-image">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="form-section section">
-            <div class="container form-section__container">
-                <h2 class="section__title section__title--reviews">Закажите доску</h2>
-                <form action="" class="form">
-                    <div class="form__col">
-                        <div class="form__row">
-                            <label class="form__block">
-                                <div class="form__title">Имя</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label class="form__block">
-                                <div class="form__title">Телефон</div>
-                                <input type="text" class="form__input">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__block">
-                                <div class="form__title">Улица</div>
-                                <input type="text" class="form__input">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__block">
-                                <div class="form__title">Дом</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label class="form__block">
-                                <div class="form__title">Корпус</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label class="form__block">
-                                <div class="form__title">Квартира</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label class="form__block">
-                                <div class="form__title">Этаж</div>
-                                <input type="text" class="form__input">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form__col">
-                        <div class="form__row form__row--textarea">
-                            <label class="form__block">
-                                <div class="form__title">Комментарий</div>
-                                <textarea class="form__input form__input--textarea"></textarea>
-                            </label>
-                        </div>
-                        <div class="form__row form__row--controls">
-                            <div class="form__controls">
-                                <label class="radio">
-                                    <input type="radio" name="option" class="radio__elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="radio__title">Оплата наличными</div>
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="option" class="radio__elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="radio__title">Оплата картой</div>
-                                </label>
-                                <div class="form__row">
-                                    <label class="radio radio--checkbox">
-                                        <input type="checkbox" class="radio__elem">
-                                        <div class="radio__visible"></div>
-                                        <div class="radio__title">Не перезванивать</div>
-                                    </label>
+                        <div class="product-info">
+                            <div class="param-button">
+                                <div class="param-button__img-wrap">
+                                    <svg class="param-button__img">
+                                        <use
+                                            xlink:href="img/svg/sprite.svg#param-button-icon"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="param-button__title">Параметры</span> 
+                            </div>
+                            <div class="product-info__param-block">
+                                <ul class="param-list">
+                                    <li class="param-list__item param">
+                                        <svg class="param__img">
+                                            <use xlink:href = "img/svg/sprite.svg#lenght">
+                                            </use>
+                                        </svg>
+                                        <div class="param__title">Длина доски</div>
+                                        <div class="param__value">от 2,5м</div>
+                                    </li>
+                                    <li class="param-list__item param">
+                                        <svg class="param__img">
+                                            <use xlink:href = "img/svg/sprite.svg#width">
+                                            </use>
+                                        </svg>
+                                        <div class="param__title">Ширина доски</div>
+                                        <div class="param__value">от 40 см</div>
+                                    </li>
+                                    <li class="param-list__item param">
+                                        <svg class="param__img">
+                                            <use xlink:href = "img/svg/sprite.svg#thickness">
+                                            </use>
+                                        </svg>
+                                        <div class="param__title">Толщина</div>
+                                        <div class="param__value">8 см</div>
+                                    </li>
+                                    <li class="param-list__item param">
+                                        <svg class="param__img">
+                                            <use xlink:href = "img/svg/sprite.svg#life-time">
+                                            </use>
+                                        </svg>
+                                        <div class="param__title">Срок службы</div>
+                                        <div class="param__value">5 лет</div>
+                                    </li>
+                                    <li class="param-list__item param">
+                                        <svg class="param__img">
+                                            <use xlink:href = "img/svg/sprite.svg#weight">
+                                            </use>
+                                        </svg>
+                                        <div class="param__title">Вес</div>
+                                        <div class="param__value">7-8 кг</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product-about">
+                                <div class="product-about__title">Лонгборд 2.0</div>
+                                <div class="product-about__text">
+                                    <p>
+                                        Устойчивая доска для новичков. На них легко
+                                        лежать, сидеть, грести, разгребаться на
+                                        волны и ехать. Размер и плавучесть доски
+                                        позволяет брать очень маленькие и пологие
+                                        волны и не спеша, не прилагая особых усилий
+                                        ехать по ним.
+                                    </p>
+                                </div>
+                                <ul class="product-about__specs-list">
+                                    <li class="product-about__spec spec">
+                                        <div class="spec__title">
+                                            Длина доски
+                                        </div>
+                                        <div class="spec__info">
+                                            от 2,5 метров
+                                        </div>
+                                    </li>
+                                    <li class="product-about__spec spec">
+                                        <div class="spec__title">
+                                            Ширина доски
+                                        </div>
+                                        <div class="spec__info">
+                                            от 40 сантиметров
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="product-about__order-block">
+                                    <div class="product-about__price">7000 ₽</div>
+                                    <a href="#" class="product-about__button button">
+                                        Заказать
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                     
-                        <div class="form__buttons">
-                            <input type="submit" value="Заказать" class="button form__button">
-                            <input type="reset" value="Очистить" class="button button--transparent">
-                        </div>
                     </div>
-                </form>
-            </div>
-        </section>
 
-        <section class="map-section section">
-            <footer class="footer">
-                <div class="container footer__container">
-                    <address class="contacts footer__contacts">
-                        <div class="contacts__location">Москва, ул.Новый Арбат, д.31/12</div>
-                        <div class="contacts__row">
-                            <div class="contacts__icon-wrap">    
-                                <svg class= "contacts__icon contacts__icon--footer">
-                                    <use xlink:href= "img/svg/sprite.svg#telephone"></use>
-                                </svg>
-                            </div>
-                            <a href="+78009039090" class="contacts__number">8 800 903 90 90</a>
-                        </div>
-                    </address>
-                    <div class="socials footer__socials">
-                        <a href="#" class="socials__link socials__link--vk">
-                            <svg class= "socials__icon">
-                                <use xlink:href= "img/svg/sprite.svg#vk"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="socials__link socials__link--fb">
-                            <svg class= "socials__icon">
-                                <use xlink:href= "img/svg/sprite.svg#fb"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="socials__link socials__link--inst">
-                            <svg class= "socials__icon">
-                                <use xlink:href= "img/svg/sprite.svg#inst"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="socials__link socials__link--tw">
-                            <svg class= "socials__icon">
-                                <use xlink:href= "img/svg/sprite.svg#tw"></use>
-                            </svg>
-                        </a>
-                    </div>
+                    <a href="" class="slider-button">
+                        <svg class="slider-arrow">
+                            <use xlink:href = "img/svg/sprite.svg#right-arrow"></use>
+                        </svg>
+                    </a>
+
                 </div>
-            </footer>
-        </section>
 
+                
+            </section>
 
-    </div>
-</body>
+            <section class="reviews-section section">
+                <div class="container reviews-container">
+                    <h2 class="section__title reviews-section__title">
+                        Отзывы
+                    </h2>
+                    <div class="review-wrapper">
+                        <div class="review">
+                            <div class="review__img-wrapper">
+                                <img
+                                    src="img/review-big.png"
+                                    alt=""
+                                    class="review__img"
+                                />
+                            </div>
+                            <div class="review__text-block">
+                                <div class="review__title">Лучший дизайн</div>
+                                <div class="review__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Rem, temporibus! Eius
+                                        maxime obcaecati possimus error deserunt
+                                        molestias debitis totam hic illo eaque?
+                                        Unde doloribus laborum quisquam, non, ad
+                                        in ipsa expedita, sapiente soluta
+                                        incidunt id eligendi voluptatibus!
+                                        Fugit, a similique?
+                                    </p>
+                                </div>
+                                <div class="review__username">
+                                    Ольга Макарова
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="reviews-menu">
+                        <li
+                            class="
+                                reviews-menu__item reviews-menu__item--active
+                            "
+                        >
+                            <a href="#" class="reviews-menu__item-link">
+                                <img
+                                    src="img/reviews-1.png"
+                                    alt="user-pic"
+                                    class="user-image"
+                                />
+                            </a>
+                        </li>
+                        <li class="reviews-menu__item">
+                            <a href="#" class="reviews-menu__item-link">
+                                <img
+                                    src="img/reviews-2.png"
+                                    alt="user-pic"
+                                    class="user-image"
+                                />
+                            </a>
+                        </li>
+                        <li class="reviews-menu__item">
+                            <a href="#" class="reviews-menu__item-link">
+                                <img
+                                    src="img/reviews-3.png"
+                                    alt="user-pic"
+                                    class="user-image"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="form-section section">
+                <div class="container form-section__container">
+                    <h2 class="section__title section__title--reviews">
+                        Закажите доску
+                    </h2>
+                    <form action="" class="form">
+                        <div class="form__col">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Имя</div>
+                                    <input type="text" class="form__input" />
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Телефон</div>
+                                    <input type="text" class="form__input" />
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Улица</div>
+                                    <input type="text" class="form__input" />
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Дом</div>
+                                    <input type="text" class="form__input" />
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Корпус</div>
+                                    <input type="text" class="form__input" />
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Квартира</div>
+                                    <input type="text" class="form__input" />
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Этаж</div>
+                                    <input type="text" class="form__input" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__col">
+                            <div class="form__row form__row--textarea">
+                                <label class="form__block">
+                                    <div class="form__title">Комментарий</div>
+                                    <textarea
+                                        class="
+                                            form__input form__input--textarea
+                                        "
+                                    ></textarea>
+                                </label>
+                            </div>
+                            <div class="form__row form__row--controls">
+                                <div class="form__controls">
+                                    <label class="radio">
+                                        <input
+                                            type="radio"
+                                            name="option"
+                                            class="radio__elem"
+                                        />
+                                        <div class="radio__visible"></div>
+                                        <div class="radio__title">
+                                            Оплата наличными
+                                        </div>
+                                    </label>
+                                    <label class="radio">
+                                        <input
+                                            type="radio"
+                                            name="option"
+                                            class="radio__elem"
+                                        />
+                                        <div class="radio__visible"></div>
+                                        <div class="radio__title">
+                                            Оплата картой
+                                        </div>
+                                    </label>
+                                    <div class="form__row">
+                                        <label class="radio radio--checkbox">
+                                            <input
+                                                type="checkbox"
+                                                class="radio__elem"
+                                            />
+                                            <div class="radio__visible"></div>
+                                            <div class="radio__title">
+                                                Не перезванивать
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__buttons">
+                                <input
+                                    type="submit"
+                                    value="Заказать"
+                                    class="button form__button"
+                                />
+                                <input
+                                    type="reset"
+                                    value="Очистить"
+                                    class="button button--transparent"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="map-section section">
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <address class="contacts footer__contacts">
+                            <div class="contacts__location">
+                                Москва, ул.Новый Арбат, д.31/12
+                            </div>
+                            <div class="contacts__row">
+                                <div class="contacts__icon-wrap">
+                                    <svg
+                                        class="
+                                            contacts__icon
+                                            contacts__icon--footer
+                                        "
+                                    >
+                                        <use
+                                            xlink:href="img/svg/sprite.svg#telephone"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <a href="+78009039090" class="contacts__number">
+                                    8 800 903 90 90
+                                </a>
+                            </div>
+                        </address>
+                        <div class="socials footer__socials">
+                            <a href="#" class="socials__link socials__link--vk">
+                                <svg class="socials__icon">
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#vk"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="socials__link socials__link--fb">
+                                <svg class="socials__icon">
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#fb"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                class="socials__link socials__link--inst"
+                            >
+                                <svg class="socials__icon">
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#inst"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="socials__link socials__link--tw">
+                                <svg class="socials__icon">
+                                    <use
+                                        xlink:href="img/svg/sprite.svg#tw"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </div>
+
+        <div class="hamburger">
+
+            <div class="hamburger__container">
+                <a href="#" class="hamburger-icon hamburger-icon--close">
+                    <span class="hamburger-icon__plank hamburger-icon__plank--left"></span>
+                    <span class="hamburger-icon__plank hamburger-icon__plank--right"></span>
+                </a>
+                    
+                <nav class="site-menu site-menu--vertical">
+                    <ul class="site-menu__items site-menu__items--vertical">
+                        <li class="site-menu__item site-menu__item--vertical">
+                            <a href="" class="site-menu__link site-menu__link--vertical">О нас</a>
+                        </li>
+                        <li class="site-menu__item site-menu__item--vertical">
+                            <a href="" class="site-menu__link site-menu__link--vertical">
+                                Серфборды
+                            </a>
+                        </li>
+                        <li class="site-menu__item site-menu__item--vertical">
+                            <a href="" class="site-menu__link site-menu__link--vertical">
+                                Команда
+                            </a>
+                        </li>
+                        <li class="site-menu__item site-menu__item--vertical">
+                            <a href="" class="site-menu__link site-menu__link--vertical">Меню</a>
+                        </li>
+                        <li class="site-menu__item site-menu__item--vertical">
+                            <a href="" class="site-menu__link site-menu__link--vertical">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="site-menu__item site-menu__item--vertical">
+                            <a href="" class="site-menu__link site-menu__link--vertical">
+                                Как мы работаем
+                            </a>
+                        </li>
+                        <li class="site-menu__item site-menu__item--vertical">
+                            <a href="" class="site-menu__link site-menu__link--vertical">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <script>
+
+            const hamburger = document.querySelector(".hamburger");
+            const hamburgerOpen = document.querySelector(".hamburger-icon");
+            const hamburgerClose = document.querySelector(".hamburger-icon--close");
+
+            hamburgerOpen.addEventListener ("click", e => {
+                hamburger.style.display = "block";
+            })
+
+            hamburgerClose.addEventListener("click", e => {
+                hamburger.style.display = "none";
+            })
+            
+        </script>
+    </body>
 </html>

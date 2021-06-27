@@ -1,0 +1,21 @@
+.param {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 32px;
+        height: 32px;
+        margin-right: rem(12px);
+    }
+
+    &__title {
+        font-size: rem(16px);
+        font-weight: 500;
+        margin-right: 10px;
+    }
+
+    &__value {
+        margin-left: auto;
+        font-size: 16px;
+    }
+}

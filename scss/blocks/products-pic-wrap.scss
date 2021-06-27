@@ -1,0 +1,9 @@
+.products-pic-wrap {
+    flex-shrink: 0;
+    margin-right: rem(55px);
+
+    @include tablets {
+        margin-right: 0;
+        max-width: 46%;
+    }
+}
