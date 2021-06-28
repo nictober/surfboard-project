@@ -1563,6 +1563,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .products-pic-wrap {
@@ -1573,7 +1574,7 @@ template {
 @media screen and (max-width: 768px) {
   .products-pic-wrap {
     margin-right: 0;
-    max-width: 49%;
+    max-width: 46%;
   }
 }
 
@@ -1631,7 +1632,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 91%;
+  max-width: 80%;
 }
 @media screen and (max-width: 768px) {
   .product-about {
@@ -1660,7 +1661,7 @@ template {
 }
 @media screen and (max-width: 768px) {
   .product-about__text {
-    width: 78%;
+    width: 71%;
     text-align: center;
     margin-bottom: 1.3888888889rem;
   }
@@ -1791,6 +1792,35 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.arrow {
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .arrow {
+    position: static;
+  }
+}
+.arrow--left {
+  top: 235px;
+  left: -89px;
+}
+@media screen and (max-width: 768px) {
+  .arrow--left {
+    top: 227px;
+    left: 130px;
+  }
+}
+.arrow--right {
+  top: 235px;
+  left: 875px;
+}
+@media screen and (max-width: 768px) {
+  .arrow--right {
+    top: 227px;
+    left: 571px;
   }
 }
 /*# sourceMappingURL=main.css.map */

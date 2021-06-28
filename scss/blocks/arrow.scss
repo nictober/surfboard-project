@@ -1,0 +1,29 @@
+.arrow {
+    position: absolute;
+
+    @include phones {
+        position: static;
+    }
+
+    &--left {
+        top: 235px;
+        left: -89px;
+
+        @include tablets {
+            top: 227px;
+            left: 130px;
+        }
+    }
+
+    &--right {
+        top: 235px;
+        left: 875px;
+
+        @include tablets {
+            top: 227px;
+            left: 571px;
+        }
+    }
+
+
+}
