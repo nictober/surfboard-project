@@ -13,6 +13,10 @@
     border: none;
     cursor: pointer;
 
+    @include tablets {
+        font-size: rem(17px);
+    }
+
     @include phones {
         font-size: rem(22px);
     }

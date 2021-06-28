@@ -1,0 +1,9 @@
+.slider-wrap {
+    display: flex;
+    
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

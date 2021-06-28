@@ -17,6 +17,7 @@
 
         @include tablets {
             font-size: rem(32px);
+            margin-bottom: rem(13px);
         }
     }
 
@@ -28,21 +29,27 @@
         @include tablets {
             width: 78%;
             text-align: center;
+            margin-bottom: rem(25px);
         }
     }
 
     &__specs-list {
         display: flex;
         margin-bottom: rem(24px);
+
+        @include tablets {
+            padding-left: rem(33px);
+            margin-bottom: rem(31px);
+        }
     }
 
     &__order-block {
         display: flex;
         justify-content: space-between;
 
-        @include tablets {
-            padding-right: rem(31px);
-        }
+        // @include tablets {
+        //     padding-right: rem(31px);
+        // }
     }
 
     &__price {
@@ -52,7 +59,9 @@
 
         @include tablets {
             margin-right: rem(35px);
+            font-size: rem(62px);
         }
+        
     }
 
     &__spec {
@@ -60,6 +69,10 @@
 
         &:last-child{
             margin-right: 0;
+        }
+
+        @include tablets {
+            margin-right: rem(60px);
         }
     }
 }
