@@ -1,27 +1,38 @@
 .arrow {
     position: absolute;
+    top: 44%;
 
-    @include phones {
-        position: static;
+    @include tablets {
+        top: 30%;
     }
 
+    @include phones {
+        top: 25%;
+    }
+
+
     &--left {
-        top: 235px;
-        left: -89px;
+        left: -9%;
 
         @include tablets {
-            top: 227px;
-            left: 130px;
+            left: 18%;
+        }
+
+        @include phones {
+            left: -2%;
         }
     }
 
     &--right {
-        top: 235px;
-        left: 875px;
+        left: 93%;
 
         @include tablets {
-            top: 227px;
-            left: 571px;
+            left: 79%;
+        }
+
+        @include phones {
+            right: 0;
+            left: initial;
         }
     }
 

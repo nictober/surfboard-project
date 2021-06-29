@@ -1577,6 +1577,12 @@ template {
     max-width: 46%;
   }
 }
+@media screen and (max-width: 480px) {
+  .products-pic-wrap {
+    max-width: 60%;
+    margin-bottom: 2.1666666667rem;
+  }
+}
 
 .param-button {
   display: -webkit-box;
@@ -1664,6 +1670,13 @@ template {
     width: 71%;
     text-align: center;
     margin-bottom: 1.3888888889rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-about__text {
+    width: 87%;
+    font-size: 1.0833333333rem;
+    line-height: 1.29;
   }
 }
 .product-about__specs-list {
@@ -1797,30 +1810,47 @@ template {
 
 .arrow {
   position: absolute;
+  top: 44%;
+}
+@media screen and (max-width: 768px) {
+  .arrow {
+    top: 30%;
+  }
 }
 @media screen and (max-width: 480px) {
   .arrow {
-    position: static;
+    top: 25%;
   }
 }
 .arrow--left {
-  top: 235px;
-  left: -89px;
+  left: -9%;
 }
 @media screen and (max-width: 768px) {
   .arrow--left {
-    top: 227px;
-    left: 130px;
+    left: 18%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow--left {
+    left: -2%;
   }
 }
 .arrow--right {
-  top: 235px;
-  left: 875px;
+  left: 93%;
 }
 @media screen and (max-width: 768px) {
   .arrow--right {
-    top: 227px;
-    left: 571px;
+    left: 79%;
   }
+}
+@media screen and (max-width: 480px) {
+  .arrow--right {
+    right: 0;
+    left: initial;
+  }
+}
+
+.product-pic {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

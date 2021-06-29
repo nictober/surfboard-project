@@ -6,4 +6,9 @@
         margin-right: 0;
         max-width: 46%;
     }
+
+    @include phones {
+        max-width: 60%;
+        margin-bottom: rem(39px);
+    }
 }
