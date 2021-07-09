@@ -1,0 +1,16 @@
+.team-list {
+    display: flex;
+    column-gap: rem(20px);
+
+    @include tablets {
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+
+        @include tablets {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.team-member {
+    min-width: 25%;
+
+    &__img-wrap {
+        margin-bottom: rem(20px);
+    }
+
+    &__name {
+        display: block;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: rem(21px);
+        margin: 0 auto rem(10px);
+
+        &:after {
+            content:url(../img/team-arrow.png);
+        }
+    }
+
+
+    &__text-wrap {
+        overflow: hidden;
+        height: 0;
+        transition: height .3s;
+
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__status {
+        margin-bottom: rem(7px);
+    }
+
+    &__about {
+        font-weight: 300;
+        color: #666;
+    }
+
+
+}

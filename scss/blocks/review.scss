@@ -1,9 +1,17 @@
 .review {
+    opacity: 0;
     display: flex;
     align-items: center;
     background-color: #F8FAF9;
     background-size: cover;
     padding: rem(42px);
+    position: absolute;
+
+    &--active {
+        opacity: 1;
+        position: static;
+        transition: opacity .5s;
+    }
 
     @include tablets {
         flex-direction: column;
@@ -53,7 +61,6 @@
 
     &__text {
         margin-bottom: rem(26px);
-        line-height: 1.4;
         max-width: 80%;
         color: #666666;
 
@@ -62,7 +69,7 @@
         }
 
         p {
-            line-height: 1.2;
+            line-height: 1.4;
         }
     }
 
