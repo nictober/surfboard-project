@@ -1884,16 +1884,22 @@ template {
           justify-content: center;
 }
 .team-section__title {
-  margin-bottom: 3.6111111111rem;
+  margin-bottom: 2.6111111111rem;
+}
+@media screen and (max-width: 480px) {
+  .team-section__title {
+    margin-bottom: 1.6666666667rem;
+    font-size: 2.5555555556rem;
+  }
 }
 
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 1.1111111111rem;
-     -moz-column-gap: 1.1111111111rem;
-          column-gap: 1.1111111111rem;
+  -webkit-column-gap: 0.9444444444rem;
+     -moz-column-gap: 0.9444444444rem;
+          column-gap: 0.9444444444rem;
 }
 @media screen and (max-width: 768px) {
   .team-list {
@@ -1910,10 +1916,17 @@ template {
 }
 
 .team-member {
-  min-width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .team-member__img-wrap {
   margin-bottom: 1.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .team-member__img-wrap {
+    margin-bottom: 0.5555555556rem;
+  }
 }
 .team-member__name {
   display: block;
@@ -1924,6 +1937,22 @@ template {
 }
 .team-member__name:after {
   content: url(../img/team-arrow.png);
+}
+@media screen and (max-width: 768px) {
+  .team-member__name {
+    margin-bottom: 1.0555555556rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-member__name {
+    font-size: 1.3333333333rem;
+    margin-bottom: 0.6111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-member__pic {
+    width: 31%;
+  }
 }
 .team-member__text-wrap {
   overflow: hidden;
@@ -1937,9 +1966,31 @@ template {
 .team-member__status {
   margin-bottom: 0.3888888889rem;
 }
+@media screen and (max-width: 768px) {
+  .team-member__status {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-member__status {
+    font-size: 1.2222222222rem;
+  }
+}
 .team-member__about {
   font-weight: 300;
   color: #666;
+}
+@media screen and (max-width: 768px) {
+  .team-member__about {
+    margin: 0 auto;
+    width: 32%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-member__about {
+    width: 54%;
+    font-size: 1.1666666667rem;
+  }
 }
 
 .modal {

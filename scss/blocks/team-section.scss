@@ -4,6 +4,11 @@
     justify-content: center;
 
     &__title {
-        margin-bottom: rem(65px);
+        margin-bottom: rem(47px);
+
+        @include phones {
+            margin-bottom: rem(30px);
+            font-size: rem(46px);
+        }
     }
 }

@@ -1,8 +1,12 @@
 .team-member {
-    min-width: 25%;
+    flex: 1;
 
     &__img-wrap {
         margin-bottom: rem(20px);
+
+        @include tablets {
+            margin-bottom: rem(10px);
+        }
     }
 
     &__name {
@@ -14,6 +18,21 @@
 
         &:after {
             content:url(../img/team-arrow.png);
+        }
+
+        @include tablets {
+            margin-bottom: rem(19px);
+        }
+
+        @include phones {
+            font-size: rem(24px);
+            margin-bottom: rem(11px);
+        }
+    }
+
+    &__pic {
+        @include phones {
+            width: 31%;
         }
     }
 
@@ -31,11 +50,29 @@
 
     &__status {
         margin-bottom: rem(7px);
+
+        @include tablets {
+            margin-bottom: 0;
+        }
+
+        @include phones {
+            font-size: rem(22px);
+        }
     }
 
     &__about {
         font-weight: 300;
         color: #666;
+
+        @include tablets {
+            margin: 0 auto;
+            width: 32%;
+        }
+
+        @include phones {
+            width: 54%;
+            font-size: rem(21px);
+        }
     }
 
 

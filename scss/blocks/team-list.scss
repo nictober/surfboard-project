@@ -1,6 +1,6 @@
 .team-list {
     display: flex;
-    column-gap: rem(20px);
+    column-gap: rem(17px);
 
     @include tablets {
         display: none;
