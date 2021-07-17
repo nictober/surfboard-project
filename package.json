@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "jquery-touchswipe": "^1.6.19"
+  },
+  "name": "surfboard-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nictober/surfboard-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nictober/surfboard-project/issues"
+  },
+  "homepage": "https://github.com/nictober/surfboard-project#readme",
+  "description": ""
+}

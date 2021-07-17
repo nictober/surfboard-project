@@ -42,15 +42,27 @@ button {
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Alegreya Sans', sans-serif;
     line-height: 1.4;
+    height: 100%;
 }
 
 .wrapper {
     width: 100%;
-    min-height: 100%;
-    overflow: hidden;
+    height: 100%;
+    overflow: hidden; //for OPS
+    position: relative; //for OPS
+}
+
+.main-content {
+    height: 100%; //for OPS
+    transition: transform 1s; //for OPS
+    will-change: transition; //for OPS
 }
 
 .container {
@@ -60,7 +72,7 @@ body {
 }
 
 .section {
-    height: 100vh;
+    height: 100%;
     display: flex;
 
     &__title {

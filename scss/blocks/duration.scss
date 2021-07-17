@@ -1,0 +1,40 @@
+.duration {
+    display: flex;
+    margin-right: rem(42px);
+    flex: 1;
+
+    &__play-btn {
+        vertical-align: middle;
+    }
+
+    &__play-img {
+        width: 11px;
+        height: 16px;
+        margin-right: rem(30px);
+    }
+
+    &__length-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__length {
+        width: 100%;
+        height: 4px;
+        appearance: none;
+        outline: 0;
+        background: linear-gradient(90deg, #FEDB3F 0%, #626262 0%);
+
+        &::-webkit-slider-thumb {
+            appearance: none;
+            outline: 0;
+            background: #FEDB3F;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+    }
+
+
+}

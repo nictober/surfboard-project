@@ -1,0 +1,58 @@
+.sound {
+    display: flex;
+    position: relative;
+
+    &__btn {
+        cursor: pointer;
+        
+        &:before {
+            content: "";
+            width: 29px;
+            height: 3px;
+            background-color: red;
+            position: absolute;
+            display: block;
+            left: -4px;
+            top: 50%;
+            transform: translateY(-50%) rotate(42deg);
+            z-index: 2;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        &.active  {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__img {
+        width: 13px;
+        height: 16px;
+        margin-right: rem(25px);
+        vertical-align: middle;
+    }
+
+    &__volume {
+        display: flex;
+        align-items: center;
+    }
+
+    &__volume-line {
+        width: 100%;
+        height: 4px;
+        appearance: none;
+        outline: 0;
+        background: #626262;
+
+        &::-webkit-slider-thumb {
+            appearance: none;
+            outline: 0;
+            background: #FEDB3F;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+    }
+}

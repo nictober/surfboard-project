@@ -1,0 +1,56 @@
+.main-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    &__item {
+        display: flex;
+    }
+
+    &__title {
+        display: block;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+    &__img {
+        height: 100vh;
+    }
+
+    &__text {
+        padding: 31px 80px 31px 38px;
+    }
+
+    &__product-title {
+        width: 466px;
+        height: 58px;
+        font-weight: 700;
+        font-size: rem(48px);
+        color: #fff;
+        position: absolute;
+        top: 54%;
+        left: -174%;
+        transform: rotate(-90deg);
+    }
+    
+
+    &__content {
+        background: rgba(51, 53, 55, 0.9);
+        color: #fff;
+        width: 0;
+        // padding: 40px;
+        transition: width .4s;
+
+    }
+
+    &__content-container {
+        // width: 0;
+        overflow: hidden;
+
+        &--active {
+            width: 524px;
+        }
+    }
+}

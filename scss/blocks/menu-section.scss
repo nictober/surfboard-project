@@ -1,0 +1,12 @@
+.menu-section {
+    background: url(../img/menu-section-brd.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__title {
+        color: #fff;
+        position: absolute;
+        top: 16%;
+        left: 7%;
+    }
+}
