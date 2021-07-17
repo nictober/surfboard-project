@@ -350,19 +350,19 @@ $(document).ready(function(){
         sectionTransition(reqSection.index())
     })
 
-    $("body").swipe({
-        swipe: function (event,direction,) {
-            const scroller = sectionTransition()
-            let scrollDirection = ""
+    // $("body").swipe({
+    //     swipe: function (event,direction,) {
+    //         const scroller = sectionTransition()
+    //         let scrollDirection = ""
 
-            if (scrollDirection === "up") scrollDirection = "next"
-            if (scrollDirection === "down") scrollDirection = "prev"
+    //         if (scrollDirection === "up") scrollDirection = "next"
+    //         if (scrollDirection === "down") scrollDirection = "prev"
 
-            scroller[scrollDirection]()
+    //         scroller[scrollDirection]()
 
-            // alert(direction)
-        },
-    })
+    //         // alert(direction)
+    //     },
+    // })
 
     // ______________________________________________________OPS end
 
