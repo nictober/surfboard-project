@@ -68,6 +68,11 @@ $(document).ready(function(){
         }
     })
 
+
+
+
+
+
     //products -слайдер
 
     const slider= $(".products").bxSlider({
@@ -170,7 +175,8 @@ $(document).ready(function(){
 
         const widthOfItems = itemWidth * listItems.length
 
-        const isMobile = window.matchMedia("(max-width: 768px)").matches
+        const isTablet = window.matchMedia("(max-width: 768px)").matches
+        const isMobile = window.matchMedia("(max-width: 480px)").matches
 
         // const textContainer = item.find(".")
         // const paddingLeft = css()
@@ -180,12 +186,15 @@ $(document).ready(function(){
         const paddingLeft = parseInt(textBlock.css("padding-left"))
         const paddingRight = parseInt(textBlock.css("padding-right"))
 
-
         
         
-        if (isMobile) {
+        
+        if (isTablet && !isMobile) {
             reqItemWidth = windowWidth - widthOfItems
-        } else {
+        } else if (isMobile) {
+            reqItemWidth = windowWidth
+        }
+         else {
             reqItemWidth = 524
         }
 
@@ -208,7 +217,7 @@ $(document).ready(function(){
         const textBlock = item.find(".main-menu__text")
 
         hiddenContent.width(reqContentWidth.container)
-        item.addClass("active")
+        item.addClass("main-menu__item--active")
 
         textBlock.width(reqTextBlockWidth.textBlock)
 
@@ -219,7 +228,7 @@ $(document).ready(function(){
 
         const content = container.find(".main-menu__content")
 
-        listItems.removeClass("active")
+        listItems.removeClass("main-menu__item--active")
         content.removeClass("active")
         content.width(0)
     }
@@ -230,7 +239,7 @@ $(document).ready(function(){
         const $this = $(e.currentTarget)
         const item = $this.closest(".main-menu__item")
         const container = $this.closest(".main-menu")
-        const itemOpened = item.hasClass("active")
+        const itemOpened = item.hasClass("main-menu__item--active")
 
 
         if (itemOpened) {

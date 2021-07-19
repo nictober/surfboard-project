@@ -5,8 +5,25 @@
     right: 0;
     bottom: 0;
 
+    @include phones {
+        width: 56.5%;
+    }
+
     &__item {
         display: flex;
+
+        &--active {
+            @include phones {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            z-index: 100;  
+            }
+        
+        }
+
     }
 
     &__title {
@@ -21,6 +38,11 @@
 
     &__text {
         padding: 31px 80px 31px 38px;
+
+        @include phones {
+            padding-right: 144px;
+            line-height: 1.5;
+        }
     }
 
     &__product-title {
@@ -30,9 +52,10 @@
         font-size: rem(48px);
         color: #fff;
         position: absolute;
-        top: 54%;
-        left: -174%;
-        transform: rotate(-90deg);
+        top: 96%;
+        left: 50%;
+        transform-origin: 0 0;
+        transform: rotate(-90deg) translateY(-50%);
     }
     
 

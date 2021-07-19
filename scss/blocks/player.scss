@@ -6,6 +6,10 @@
     height: rem(392px);
     position: relative;
 
+    @include phones {
+        width: 100%;
+    }
+
     &__video-block {
         display: flex;
     }

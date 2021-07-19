@@ -2027,10 +2027,25 @@ template {
   right: 0;
   bottom: 0;
 }
+@media screen and (max-width: 480px) {
+  .main-menu {
+    width: 56.5%;
+  }
+}
 .main-menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .main-menu__item--active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 100;
+  }
 }
 .main-menu__title {
   display: block;
@@ -2044,6 +2059,12 @@ template {
 .main-menu__text {
   padding: 31px 80px 31px 38px;
 }
+@media screen and (max-width: 480px) {
+  .main-menu__text {
+    padding-right: 144px;
+    line-height: 1.5;
+  }
+}
 .main-menu__product-title {
   width: 466px;
   height: 58px;
@@ -2051,10 +2072,12 @@ template {
   font-size: 2.6666666667rem;
   color: #fff;
   position: absolute;
-  top: 54%;
-  left: -174%;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  top: 96%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
 }
 .main-menu__content {
   background: rgba(51, 53, 55, 0.9);
@@ -2110,6 +2133,11 @@ template {
   width: 36.7777777778rem;
   height: 21.7777777778rem;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .player {
+    width: 100%;
+  }
 }
 .player__video-block {
   display: -webkit-box;
@@ -2307,8 +2335,8 @@ template {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-52%, -48%);
-          transform: translate(-52%, -48%);
+  -webkit-transform: translate(-52%, -53%);
+          transform: translate(-52%, -53%);
 }
 
 .modal {
