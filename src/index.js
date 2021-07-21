@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     })
 
-    //team - аккордеон
+    //team - аккордеон вертикальный 
     const openItem = clickedItem => {
         const container = clickedItem.closest(".team-member")
         const blockToOpen = container.find(".team-member__text-wrap")
@@ -67,10 +67,6 @@ $(document).ready(function(){
             openItem($this)
         }
     })
-
-
-
-
 
 
     //products -слайдер

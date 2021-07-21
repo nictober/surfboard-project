@@ -17,7 +17,7 @@
         margin: 0 auto rem(10px);
 
         &:after {
-            content:url(../img/team-arrow.png);
+            content:url(../../src/img/team-arrow.png);
         }
 
         @include tablets {
