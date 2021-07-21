@@ -177,7 +177,7 @@ $(document).ready(function(){
         // const textContainer = item.find(".")
         // const paddingLeft = css()
 
-        // let reqTextWidth = 0
+        let reqTextWidth = 0
         const textBlock = item.find(".main-menu__text")
         const paddingLeft = parseInt(textBlock.css("padding-left"))
         const paddingRight = parseInt(textBlock.css("padding-right"))

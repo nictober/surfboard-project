@@ -1,6 +1,6 @@
-
     let video 
     let durationControl
+    let soundControl
     let intervalId
     let soundStatus 
 
@@ -8,9 +8,6 @@
     const windowPlayBtn = document.querySelector(".player__button")
 
     video = document.getElementById("player")
-
-        
-    
 
     durationControl = document.getElementById("durationLevel")
     durationControl.min = 0
@@ -21,8 +18,6 @@
     soundControl.min = 0
     soundControl.max = 10
     soundControl.value = soundControl.max
-
-    
 
     durationControl.addEventListener("input", setVideoDuration)
 
